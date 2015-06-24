@@ -1,0 +1,165 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">导航</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+
+      <div id="introduction" class="section scrollspy">
+        <h4>介绍</h4>
+        <p>这是一个带有滑出效果的菜单。你可以在侧边栏上添加一个下拉效果通过使用collapsible组件。在小屏幕设备上就能看到其中的效果，
+         由于需要结合全屏导航，所以你必须使用两份同样的UL代码。
+        </p>
+      </div>
+
+
+      <div id="structure" class="section scrollspy">
+        <h4>HTML Structure</h4>
+        <pre><code class="language-markup col s12">
+  &lt;nav>
+    &lt;ul class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;ul id="slide-out" class="side-nav">
+      &lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;a href="#" data-activates="slide-out" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+  &lt;/nav>
+        </code></pre>
+      </div>
+      <div id="initialization" class="section scrollspy">
+        <h4>初始化</h4>
+        <pre><code class="language-javascript col s12">
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+        </code></pre>
+      </div>
+
+
+      <div id="options" class="scrollspy section">
+        <h4>选项</h4>
+        <p>自定义sideNav的宽度。 </p>
+        <pre><code class="language-javascript">
+  $('.button-collapse').sideNav({
+    menuWidth: 300, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on &lt;a> clicks, useful for Angular/Meteor
+    }
+  );
+        </code></pre>
+      </div>
+
+      <div id="method" class="section scrollspy">
+        <h4>调用方法</h4>
+        <p>提供了一些方法能让你设定sidebar的显隐。</p>
+      <pre><code class="language-javascript col s12">
+  // Show sideNav
+  $('.button-collapse').sideNav('show');
+  // Hide sideNav
+  $('.button-collapse').sideNav('hide');
+      </code></pre>
+      </div>
+
+
+      <div id="variations" class="scrollspy section">
+        <h2 class="header">变换样式</h2>
+        <h4>Dropdown HTML结构</h4>
+        <pre><code class="language-markup col s12">
+  &lt;ul id="slide-out" class="side-nav">
+    &lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+    &lt;li class="no-padding">
+  &lt;ul class="collapsible collapsible-accordion">
+  &lt;li>
+  &lt;a class="collapsible-header">Dropdown&lt;i class="mdi-navigation-arrow-drop-down">&lt;/i>&lt;/a>
+  &lt;div class="collapsible-body">
+  &lt;ul>
+    &lt;li>&lt;a href="#!">First&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Second&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Third&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Fourth&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;/div>
+  &lt;/li>
+  &lt;/ul>
+  &lt;/li>
+  &lt;/ul>
+  &lt;ul class="right hide-on-med-and-down">
+    &lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+    &lt;li>&lt;a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown&lt;i class="mdi-navigation-arrow-drop-down right">&lt;/i>&lt;/a>&lt;/li>
+  &lt;ul id='dropdown1' class='dropdown-content'>
+    &lt;li>&lt;a href="#!">First&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Second&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Third&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Fourth&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;/ul>
+  &lt;a href="#" data-activates="slide-out" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+        </code></pre>
+
+        <h4>全尺寸适配</h4>
+        <p>如果你想要菜单在所有分辨率的手机上都能适配，在<code class="language-markup">.button-collapse</code>添加<code class="language-markup">show-on-large</code>。 </p>
+
+        <pre><code class="language-markup col s12">
+  &lt;ul id="slide-out" class="side-nav">
+    &lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;a href="#" data-activates="slide-out" class="button-collapse show-on-large">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+        </code></pre>
+
+        <h4>固定结构</h4>
+        <p>在sideNav添加<code class="language-markup">fixed</code>class能使其在相对大的屏幕上固定，在小屏幕上隐藏。
+        </p>
+        <pre><code class="language-markup col s12">
+  &lt;ul id="slide-out" class="side-nav fixed">
+    &lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;a href="#" data-activates="slide-out" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+        </code></pre>
+        <p>用这个特性的话你需要设置主体内容的内边距。</p>
+        <pre><code class="language-css col s12">
+  header, main, footer {
+    padding-left: 240px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+        </code></pre>
+      </div>
+
+
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#structure">结构</a></li>
+            <li><a href="#initialization">初始化</a></li>
+            <li><a href="#options">选项</a></li>
+            <li><a href="#method">方法</a></li>
+            <li><a href="#variations">变换样式</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

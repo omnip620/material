@@ -1,0 +1,148 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">帮助类</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="valign" class="section scrollspy">
+        <h2 class="header">对齐</h2>
+        <p class="caption">只需几个简单的class你就能对页面内容进行对齐</p>
+
+        <h5 class="light">垂直对齐</h5>
+        <p>
+          通过在外部包裹容器中使用<code class="language-markup">valign-wrapper</code>class，就能保持内部的元素进行垂直对齐。
+        <div class="valign-demo valign-wrapper">
+          <h5 class="valign center" style="width: 100%;">WOW垂直对齐</h5>
+        </div>
+        <pre><code class="language-markup">
+    &lt;div class="valign-wrapper">
+      &lt;h5 class="valign">WOW垂直对齐&lt;/h5>
+    &lt;/div>
+        </code></pre><br>
+
+        <h5 class="light">文本对齐</h5>
+        <p>这些主要是水平对齐。包括<code class="language-markup">.left-align</code>, <code class="language-markup">.right-align</code> and <code class="language-markup">.center-align</code></p>
+        <div class="talign-demo">
+          <br>
+          <h5 class="left-align">左对齐</h5>
+        </div>
+        <br>
+        <div class="talign-demo">
+          <br>
+          <h5 class="right-align">右对齐</h5>
+        </div>
+        <br>
+        <div class="talign-demo">
+          <br>
+          <h5 class="center-align">居中</h5>
+        </div>
+        <pre><code class="language-markup">
+    &lt;div>
+        &lt;h5 class="left-align">This should be left aligned&lt;/h5>
+      &lt;/div>
+      &lt;div>
+        &lt;h5 class="right-align">This should be right aligned&lt;/h5>
+      &lt;/div>
+      &lt;div>
+        &lt;h5 class="center-align">This should be center aligned&lt;/h5>
+    &lt;/div>
+        </code></pre><br>
+
+        <h5 class="light">浮动</h5>
+        <p>通过使用<code class="language-markup">left</code> or <code class="language-markup">right</code>能快速的浮动任何元素。用<code class="language-markup">!important</code>来避免一些特殊问题。</p>
+        <pre><code class="language-markup">
+  &lt;div class="left">...&lt;/div>
+  &lt;div class="right">...&lt;/div>
+        </code></pre><br>
+
+      </div><!--  End Valign Section  -->
+
+      <!--  Hiding Section-->
+      <div id="hiding" class="section scrollspy">
+        <h2 class="header">隐藏</h2>
+        <p>我们提供了几个class来在不同的屏幕尺寸上进行显隐。</p>
+        <table class="striped">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Screen Range</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><code class="language-markup"><strong>.hide</strong></code></td>
+            <td>所有尺寸</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup"><strong>.hide-on-small-only</strong></code></td>
+            <td>手机</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup"><strong>.hide-on-med-only</strong></code></td>
+            <td>平板</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup"><strong>.hide-on-med-and-down</strong></code></td>
+            <td>平板及以下尺寸</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup"><strong>.hide-on-med-and-up</strong></code></td>
+            <td>平板及以上尺寸</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup"><strong>.hide-on-large-only</strong></code></td>
+            <td>桌面电脑</td>
+          </tr>
+          </tbody>
+        </table>
+        <br>
+        <h5 class="light">用法</h5>
+        <pre><code class="language-markup">
+  &lt;div class="hide-on-small-only">&lt;/div>
+        </code></pre><br>
+
+      </div><!--  End Hiding Section  -->
+
+
+
+      <!--  Formatting Section-->
+      <div id="formatting" class="section scrollspy">
+        <h2 class="header">格式化</h2>
+        <p>这些类帮助你格式化网页上不同的内容。</p>
+
+        <h5 class="light">省略</h5>
+        <p>使过长的文字用省略号代替,给包含长段文字的标签添加 <code class="language-markup">truncate</code>class，看下面的例子。</p>
+        <div class="row">
+          <div class="col s6 offset-s3 m6 offset-m3">
+            <div class="card-panel">
+              <h4 class="truncate">妈妈说名字要起得长一点才能被别人看到</h4>
+            </div>
+          </div>
+        </div>
+
+        <pre><code class="language-markup">
+  &lt;h4 class="truncate">妈妈说名字要起得长一点才能被别人看到&lt;/h4>
+        </code></pre><br>
+
+      </div><!--  End Formatting Section  -->
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#valign">对齐</a></li>
+            <li><a href="#hiding">隐藏</a></li>
+            <li><a href="#formatting">格式化</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

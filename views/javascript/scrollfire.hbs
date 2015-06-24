@@ -1,0 +1,120 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">滚动触发</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+        <h4>介绍</h4>
+        <p class="caption">ScrollFire是指当你页面滚动到某个位置时执行相应的函数。下面的例子展示了如何使用它。</p>
+      </div>
+
+
+      <div id="initialization" class="section scrollspy">
+        <h4>初始化</h4>
+        <pre><code class="language-javascript col s12">
+  var options = [
+    {selector: '.class', offset: 200, callback: 'globalFunction()' },
+    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
+  ];
+  Materialize.scrollFire(options);
+        </code></pre>
+      </div>
+
+      <div id="options" class="section scrollspy">
+        <h4>选项</h4>
+        <table class="hoverable">
+          <thead>
+          <tr>
+            <th>名称</th>
+            <th>描述</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Selector(指定的元素)</td>
+            <td>指定使用哪个元素</td>
+          </tr>
+          <tr>
+            <td>Offset（偏移量）</td>
+            <td>如果设置为0，那么当快要接近底部时才会被触发。</td>
+          </tr>
+          <tr>
+            <td>Callback（回调函数）</td>
+            <td>指定被触发的函数，并且只会被触发一次。</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Demo -->
+      <h2 class="header">演示</h2>
+      <p>以下是在本页面所用的代码。</p>
+      <pre>
+  <code class="language-javascript">
+  var options = [
+    {selector: '#staggered-test', offset: 50, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },
+    {selector: '#staggered-test', offset: 205, callback: 'Materialize.toast("Please continue scrolling!", 1500 )' },
+    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },
+    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
+  ];
+  Materialize.scrollFire(options);
+        </code></pre>
+      <ul id="staggered-test">
+        <li>
+          <h4><a href="#">List Item</a></h4>
+          <p>This is a description</p>
+        </li>
+        <li>
+          <h4><a href="#">List Item</a></h4>
+          <p>This is a description</p>
+        </li>
+        <li>
+          <h4><a href="#">List Item</a></h4>
+          <p>This is a description</p>
+        </li>
+        <li>
+          <h4><a href="#">List Item</a></h4>
+          <p>This is a description</p>
+        </li>
+        <li>
+          <h4><a href="#">List Item</a></h4>
+          <p>This is a description</p>
+        </li>
+      </ul>
+      <img id="image-test" class="responsive-img" src="https://unsplash.imgix.net/reserve/nE6neNVdRPSIasnmePZe_IMG_1950.jpg?dpr=1.25&fit=crop&fm=jpg&h=700&q=75&w=1050">
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#initialization">初始化</a></li>
+            <li><a href="#options">选项</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{#contentFor 'pagescripts'}}
+  <script type="text/javascript">
+    var options = [
+      {selector: '#staggered-test', offset: 50, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500); $("#call-1").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500}); ' },
+      {selector: '#staggered-test', offset: 205, callback: 'Materialize.toast("Please continue scrolling!", 1500); $("#call-2").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#staggered-test', offset: 500, callback: 'Materialize.showStaggeredList("#staggered-test"); $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' },
+      {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test"); $("#call-4").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});' }
+    ];
+    Materialize.scrollFire(options);
+  </script>
+{{/contentFor}}

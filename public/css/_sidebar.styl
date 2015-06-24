@@ -1,0 +1,53 @@
+.sidebar
+  width 240px
+  position fixed
+  box-shadow 2px 2px 2px #ddd
+  height 100%
+  background-color #FFFFFF
+  &:hover
+    overflow-y auto
+
+.sidebar .logo
+  width 100%
+  text-align center
+  height 90px
+  border-bottom 1px solid #ddd
+  margin-top 30px
+
+.sidebar
+  li
+    &:hover
+      background-color rgba(0, 0, 0, 0.05)
+
+.sidebar a
+  line-height 44px
+  height 44px
+  font-weight bolder
+  display block
+  color #444
+  padding 0 25px
+
+
+.sidebar .collapsible
+  border none
+  box-shadow none
+  margin 0
+
+.sidebar .collapsible-accordion>li.active
+  background-color rgba(0,0,0,0.05)
+
+.sidebar .collapsible-header
+  border none
+  background-color transparent
+
+.sidebar .collapsible-body
+  background-color #FFFFFF
+  border none
+  ul
+    font-weight 300
+.sidebar .collapsible-body a
+      padding-left 40px
+
+.sidebar-collapsible
+  &:hover
+    background-color #FFFFFF!important

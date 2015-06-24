@@ -1,0 +1,109 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">波浪特效</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+        <h4>介绍</h4>
+        <p class="caption">波浪特效是一个外部库，主要用来实现Material Design中的点击效果。</p>
+        <a class="waves-effect waves-light btn" href="#!">点我</a>
+      </div>
+
+
+
+      <div id="applying-waves" class="section scrollspy">
+        <h4>使用ti</h4>
+        <p>在按钮上添加一个<code class="language-markup">waves-effect</code>class就能使用这个特效。如果要用白背景则使用<code class="language-markup">waves-effect waves-light</code></p>
+      <pre><code class="language-markup">
+  &lt;a class="waves-effect waves-light btn-large" href="#">Wave&lt;/a>
+      </code></pre>
+      </div>
+
+
+
+      <div id="customization" class="section scrollspy">
+        <!--  Customization  -->
+        <h4>自定义</h4>
+        <p>框架中已经提供了数种样式，当然你也可以自定义class来使用。</p>
+        <div class="row">
+          <div class="col s12 l6">
+            <h5 class="light">颜色</h5>
+            <p>使用相应的class即可。</p>
+          <pre><code class="language-markup">
+  &lt;a href="#!" class="btn waves-effect waves-teal">Send&lt;/a>
+          </code></pre>
+            <div class="collection waves-color-demo">
+              <div class="collection-item">Default<a href="#!" class="waves-effect btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-light</code><a href="#!" class="waves-effect waves-light btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-red</code><a href="#!" class="waves-effect waves-red btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-yellow</code><a href="#!" class="waves-effect waves-yellow btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-orange</code><a href="#!" class="waves-effect waves-orange btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-purple</code><a href="#!" class="waves-effect waves-purple btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-green</code><a href="#!" class="waves-effect waves-green btn secondary-content">Send</a></div>
+              <div class="collection-item"><code class="language-markup">waves-teal</code><a href="#!" class="waves-effect waves-teal btn secondary-content">Send</a></div>
+            </div>
+          </div>
+
+          <div class="col s12 l6">
+            <h5 class="light">自定义</h5>
+            <p>如果已有的class颜色不能满足你，那么你也可以自定义颜色，看下面的例子。</p>
+
+          <pre><code class="language-css">
+ /*
+ When creating your CSS selector,
+ change "brown" to something of your choosing
+ */
+ .waves-effect.waves-brown .waves-ripple {
+ /* The alpha value allows the text and background color
+ of the button to still show through. */
+   background-color: rgba(121, 85, 72, 0.65);
+ }
+          </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="circle" class="section scrollspy">
+        <!--  Circle  -->
+        <h4>环形</h4>
+        <p>如果你想做一个环形的效果，添加<code class="language-markup">waves-circle</code>之后再添加<code class="language-markup">waves-effect</code></p>
+        <div class="row">
+          <div class="col s12">
+            <h5 class="light">HTML</h5>
+          <pre><code class="language-markup">
+ &lt;a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+   &lt;i class="material-icons">add&lt;/i>
+ &lt;/a>
+          </code></pre>
+            <div class="collection waves-color-demo">
+              <div class="collection-item">Default<a href="#!" class="waves-effect waves-circle btn-floating secondary-content"><i class="material-icons">add</i></a></div>
+              <div class="collection-item"><code class="language-markup">waves-light</code><a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content"><i class="material-icons">add</i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#applying-waves">应用</a></li>
+            <li><a href="#customization">自定义</a></li>
+            <li><a href="#circle">环形</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

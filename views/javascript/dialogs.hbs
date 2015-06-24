@@ -1,0 +1,93 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">对话框</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="toast" class="section scrollspy">
+        <p class="caption">对话款一开始并不在页面上显示出来，但是当你做某些操作后，会在页面上慢慢的显示出来以展示更多的信息。</p>
+        <h2 class="header">Toasts</h2>
+        <p>Materialize提供了非常简单的方法，来弹出一些信息，同时也不会让用户感到突兀。这些Toasts显示的位置和大小会随着你的设备的不同而改变。</p>
+        <a class="waves-effect waves-light btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!</a>
+        <p>在JavaScript中调用Materialize.toast()方法来使用。</p>
+        <pre><code class="language-javascript">
+  // Materialize.toast(message, displayLength, className, completeCallback);
+  Materialize.toast('I am a toast!', 4000) // 4000是Toast持续时间
+        </code></pre>
+        <p>一种方法是在onclick上添加这个方法。</p>
+        <pre><code class="language-markup">
+  &lt;a class="btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!&lt;/a>
+        </code></pre>
+
+        <h4>自定义HTML</h4>
+        <p>传入一个自定义的HTML标签作为第一个参数。下面的例子中，我们传入了一段文字和按钮。如果你是在外部引用Javascript，可以不用单引号。</p>
+        <a class="waves-effect waves-light btn" onclick="Materialize.toast('<span>Item Deleted</span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#1&quot;>Undo</a>', 5000)">Toast with Action</a>
+        <pre><code class="language-markup">
+  &lt;a class="waves-effect waves-light btn" onclick="Materialize.toast('&lt;span>Item Deleted&lt;/span>&lt;a class=<xmp>&quot;</xmp>btn-flat yellow-text<xmp>&quot;</xmp> href=<xmp>&quot;</xmp>#!<xmp>&quot;</xmp>>Undo&lt;a>', 5000)">Toast!&lt;/a>
+        </code></pre>
+
+        <h4>回调</h4>
+        <p>你可以在Toast结束时提供一个回调函数来执行。</p>
+        <a class="btn" onclick="Materialize.toast('I am a toast', 4000,'',function(){alert('Your toast was dismissed')})">Toast!</a>
+        <pre><code class="language-markup">
+          &lt;a class="btn" onclick="Materialize.toast('I am a toast', 4000,'',function(){alert('Your toast was dismissed')})">Toast!&lt;/a>
+        </code></pre>
+
+        <h4>多种样式</h4>
+        <p>你可以非常简便的自定义toasts的样式，把样式名字作为一个函数参数传入到选项中即可。已经提供了一个圆角样式，当然你也可以自定义样式并应用上。</p>
+
+        <a class="waves-effect waves-light btn" onclick="Materialize.toast('I am a toast!', 3000, 'rounded')">Round Toast!</a>
+
+        <pre><code class="language-javascript">
+          Materialize.toast('I am a toast!', 3000, 'rounded') // 'rounded' is the class I'm applying to the toast
+        </code></pre>
+      </div>
+
+
+
+      <!-- Tooltip Section -->
+      <div id="tooltip" class="scrollspy section">
+        <h2 class="header">工具提示</h2>
+
+        <p>工具提示是精简，富交互的文本提示。特别是当你用一个小图标时，提供一个工具提示能很方便的阐述这个小图标所具有的功能。</p>
+        <div class="row">
+          <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">底部</a>
+          <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="top" data-delay="50" data-tooltip="I am tooltip">顶部</a>
+          <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="left" data-delay="50" data-tooltip="I am tooltip">左边</a>
+          <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="right" data-delay="50" data-tooltip="I am tooltip">右边</a>
+        </div>
+        <p>添加Tooltipeed class到你的元素上，同时添加top, bottom, left, right在data-tooltip属性上来控制元素的位置。</p>
+        <pre><code class="language-markup">
+  &lt;!-- data-position can be : bottom, top, left, or right -->
+  &lt;!-- data-delay controls delay before tooltip shows (in milliseconds)-->
+  &lt;a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!&lt;/a>
+        </code></pre>
+        <br>
+        <h4>初始化</h4>
+        <p>工具提示会自动的初始化，但是当你动态添加的时候，你需要重新激活它。</p>
+        <pre><code class="language-javascript">
+   $(document).ready(function(){
+     $('.tooltipped').tooltip({delay: 50});
+   });
+        </code></pre>
+      </div>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#toast">Toasts</a></li>
+            <li><a href="#tooltip">Tooltips</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,456 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">网格系统</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="grid-container" class="section scrollspy">
+        <p class="caption">我们用标准的12列网格响应式布局系统，能让你很方便的让网页按你所想的布局。</p>
+
+        <h3 class="header">Container</h3>
+
+        <p>严格意义上container class并不是网格系统的一部分，但是在内容布局上却显得尤为重要。它能让你的网页内容居中。
+          <code class="language-markup">container</code> 的宽度大约是屏幕宽度的70%。能帮助你包裹并且居中网页内
+          容。当然，我们已经在这个项目中用到了它。</p>
+        <h4>演示</h4>
+
+        <p>点击下面的按钮你将能看到用container和不用container的区别</p>
+        <a id="container-toggle-button" class="btn waves-effect waves-light">不用Containers</a>
+        <!-- Container Visual Demo -->
+        <div class="row">
+          <div class="col s12">
+            <div class='browser-window'>
+              <div class='top-bar'>
+                <div class='circles'>
+                  <div id="close-circle" class="circle"></div>
+                  <div id="minimize-circle" class="circle"></div>
+                  <div id="maximize-circle" class="circle"></div>
+                </div>
+              </div>
+              <div class='content'>
+                <div class="row">
+
+                  <div id="site-layout-example-top" class="col s12">
+                    <!-- <p class="flat-text-logo"></p> -->
+                  </div>
+                  <div id="site-layout-example-right" class="col s12">
+                    <div class="container">
+
+                      <p class="flat-text small"></p>
+
+                      <p class="flat-text full-width"></p>
+
+                      <p class="flat-text full-width"></p>
+
+                      <p class="flat-text full-width"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          你可以将网页内容放在一个包含<code class="language-markup">container</code> class的<code class="language-markup">&lt;div></code>标签中，照着下面的例子来设置。
+          <pre><code class="language-markup">
+  &lt;body>
+    &lt;div class="container">
+      &lt;!-- Page Content goes here -->
+    &lt;/div>
+  &lt;/body>
+          </code></pre>
+
+      </div>
+      <div id="grid-intro" class="section scrollspy">
+        <h3 class="header">介绍</h3>
+
+        <p>快速的浏览一下来了解网格系统使如何工作的!</p>
+        <h4>12 列</h4>
+
+        <p>标准的网格系统包含12列，不论你在什么浏览器中，每一列的宽度都是相同的。</p>
+
+        <div class="row">
+          <div class="col s1 grid-example"><span class="flow-text">1</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">2</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">3</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">4</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">5</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">6</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">7</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">8</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">9</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">10</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">11</span></div>
+          <div class="col s1 grid-example"><span class="flow-text">12</span></div>
+        </div>
+        <p>来感受一下在HTML代码中是怎么运用网格系统的。</p>
+         <pre><code class="language-markup">
+    &lt;div class="row">
+      &lt;div class="col s1">1&lt;/div>
+      &lt;div class="col s1">2&lt;/div>
+      &lt;div class="col s1">3&lt;/div>
+      &lt;div class="col s1">4&lt;/div>
+      &lt;div class="col s1">5&lt;/div>
+      &lt;div class="col s1">6&lt;/div>
+      &lt;div class="col s1">7&lt;/div>
+      &lt;div class="col s1">8&lt;/div>
+      &lt;div class="col s1">9&lt;/div>
+      &lt;div class="col s1">10&lt;/div>
+      &lt;div class="col s1">11&lt;/div>
+      &lt;div class="col s1">12&lt;/div>
+    &lt;/div>
+         </code></pre>
+
+        <p>注意：现在，你已经知道<code class="language-markup">s1</code> 代表small-1，就是说在小屏幕中占一列的宽度。</p>
+
+        <br>
+
+        <h4>要有row</h4>
+        <p>列的应用必须包含在有row class的标签中，并且也要用
+          <code class="language-markup">col</code> class</p>
+        <div class="row">
+          <div class="col s12 grid-example"><span class="flow-text">在所有浏览器中，这个div都是12列的宽度。</span></div>
+          <div class="col s6 grid-example"><span class="flow-text">6列 (一半)</span></div>
+          <div class="col s6 grid-example"><span class="flow-text">6列 (一半)</span></div>
+        </div>
+          <pre><code class="language-markup">
+    &lt;div class="row">
+      &lt;div class="col s12">This div is 12-columns wide&lt;/div>
+      &lt;div class="col s6">This div is 6-columns wide&lt;/div>
+      &lt;div class="col s6">This div is 6-columns wide&lt;/div>
+    &lt;/div>
+          </code></pre>
+
+        <br>
+      </div>
+      <div id="grid-offsets" class="section scrollspy">
+        <h3 class="header">偏移</h3>
+        <p>只需添加 <code class="language-markup">offset-s2</code> class就可以达到偏移的目的， <code class="language-markup">s</code> 意味着屏幕宽度 (s = small, m = medium, l = large)，数字代表你想要的偏移量。</p>
+        <div class="row">
+          <div class="col s12 grid-example"><span class="flow-text">在所有浏览器中，这个div都是12列的宽度。</span></div>
+          <div class="col s6 offset-s6 grid-example"><span class="flow-text">6列 (6列偏移)</span></div>
+        </div>
+          <pre><code class="language-markup">
+    &lt;div class="row">
+      &lt;div class="col s12 grid-example">&lt;span class="flow-text">This div is 12-columns wide on all screen sizes&lt;/span>&lt;/div>
+      &lt;div class="col s6 offset-s6 grid-example">&lt;span class="flow-text">6-columns (offset-by-6)&lt;/span>&lt;/div>
+    &lt;/div>
+          </code></pre>
+      </div>
+      <div id="grid-layouts" class="scrollspy">
+        <h3 class="header">布局</h3>
+        <p>现在我将会展示一个例子，来告诉你如何用网格系统创建一个布局，希望你能爱上这种方式：）。为了方便起见，这个演示并不是响应式的。</p>
+        <div class="row">
+          <div class="col s12 m6">
+            <h4>Section</h4>
+            <p>section class 提供了简单的上下部分的内边距，在div中用 <code class="language-markup">section</code> class来包裹大块的内容。</p>
+          </div>
+          <div class="col s12 m6">
+            <h4>Divider</h4>
+            <p>Dividers是一条1像素的细线，来分割你的网页内容。只需在你的网页内容中添加一个包含 <code class="language-markup">divider</code> 的div.</p>
+          </div>
+        </div>
+
+        <h4>示例</h4>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Section 1</h5>
+          <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Section 2</h5>
+          <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Section 3</h5>
+          <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+          <pre><code class="language-markup">
+    &lt;div class="divider">&lt;/div>
+      &lt;div class="section">
+        &lt;h5>Section 1&lt;/h5>
+        &lt;p>Stuff&lt;/p>
+      &lt;/div>
+      &lt;div class="divider">&lt;/div>
+      &lt;div class="section">
+        &lt;h5>Section 2&lt;/h5>
+        &lt;p>Stuff&lt;/p>
+      &lt;/div>
+      &lt;div class="divider">&lt;/div>
+      &lt;div class="section">
+        &lt;h5>Section 3&lt;/h5>
+        &lt;p>Stuff&lt;/p>
+    &lt;/div>
+          </code></pre><br>
+
+
+        <h4>更进一步</h4>
+        <p>如果我们想要三个宽度一样的div，那么就可以定义每个div的宽度为4列，4+4+4=12，完美满足12列。在这些div中继续填充你想要的内容，就那这个网页来做个例子，看下面。</p>
+        <div class="row">
+          <div class="col s4">
+            <div class="center promo promo-example">
+              <i class="mdi-image-flash-on"></i>
+              <p class="promo-caption">急速开发</p>
+              <p class="light center">我们在组件中定义了大量的规则来为你提供默认的样式。另外，我们重构了动画和变形以提供更加平滑的用户体验。</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="center promo promo-example">
+              <i class="mdi-social-group"></i>
+              <p class="promo-caption">用户体验</p>
+              <p class="light center">基于Material Design的设计原则，我们创建了一套能给用户更多动效反馈的框架。同时，也内嵌了一套完备的响应式系统来保证在各个平台上都能有一致的表现。</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="center promo promo-example">
+              <i class="mdi-action-settings"></i>
+              <p class="promo-caption">易用原则</p>
+              <p class="light center">我们提供了一套详尽的说明文档和不同模块对应的示例，来帮助开发者更好的上手。并且开发者也可以随时提出任何关于Materialize的问题，我们都将尽力回答。</p>
+            </div>
+          </div>
+        </div>
+      <pre><code class="language-markup">
+  &lt;div class="row">
+
+    &lt;div class="col s4">
+    &lt;!-- Promo Content 1 goes here -->
+    &lt;/div>
+    &lt;div class="col s4">
+    &lt;!-- Promo Content 2 goes here -->
+    &lt;/div>
+    &lt;div class="col s4">
+    &lt;!-- Promo Content 3 goes here -->
+    &lt;/div>
+
+  &lt;/div>
+      </code></pre>
+
+        <br>
+
+        <h4>两列布局</h4>
+        <p>你会发现创建一个两列式布局是如此的简单，只要记着两列加起来的宽度满足12就行。</p>
+
+        <div class="row">
+          <div class="col s12">
+            <div class='browser-window'>
+              <div class='top-bar'>
+                <div class='circles'>
+                  <div id="close-circle" class="circle"></div>
+                  <div id="minimize-circle" class="circle"></div>
+                  <div id="maximize-circle" class="circle"></div>
+                </div>
+              </div>
+              <div class='content'>
+                <div class="row">
+
+                  <div id="site-layout-example-top" class="col s12">
+                    <!-- <p class="flat-text-logo"></p> -->
+                  </div>
+                  <div id="site-layout-example-left" class="col s3">
+                    <p class="flat-text-header"></p>
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                  </div>
+                  <div id="site-layout-example-right" class="col s9">
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <pre><code class="language-markup">
+  &lt;!-- Navbar goes here -->
+
+    &lt;!-- Page Layout here -->
+    &lt;div class="row">
+
+    &lt;div class="col s3">
+    &lt;!-- Grey navigation panel -->
+    &lt;/div>
+
+    &lt;div class="col s9">
+    &lt;!-- Teal page content -->
+    &lt;/div>
+
+  &lt;/div>
+    </code></pre>
+      </div>
+      <div id="grid-responsive" class="scrollspy">
+        <h3 class="header">响应式布局</h3>
+        <p>前面我们展示了如何用网格系统创建布局，现在我们将创建一个如何在所有屏幕尺寸上看起来都非常棒的布局。</p>
+        <h4>Screen Sizes</h4>
+        <table class="hoverable">
+          <thead>
+          <tr>
+            <th></th>
+            <th data-field="id">Mobile Devices <br>&lt;= 600px</th>
+            <th data-field="name">Tablet Devices <br>&lt;= 992px</th>
+            <th data-field="price">Desktop Devices <br>&gt;= 992px</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><strong>Class Prefix</strong></td>
+            <td><code class="language-markup">.s</code></td>
+            <td><code class="language-markup">.m</code></td>
+            <td><code class="language-markup">.l</code></td>
+          </tr>
+          <tr>
+            <td><strong>Container Width</strong></td>
+            <td>85%</td>
+            <td>85%</td>
+            <td>70%</td>
+          </tr>
+          <tr>
+            <td><strong>Number of Columns</strong></td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <br>
+
+        <h4>响应式化</h4>
+        <p>在前面的例子中，我们只定义了用<code class="language-markup">"col s12"</code>处理小尺寸屏幕。使用s12，和使用<code class="language-markup">"col s12 m12 l12"</code>是一个效果。但是我们可以更确切的定义宽度，来让我们的网站更富有响应性。</p>
+
+        <div class="row">
+          <div class="grid-example col s12 teal lighten-2"><span class="flow-text">任何屏幕尺寸下都是全屏</span></div>
+          <div class="grid-example col s12 m6 teal lighten-2"><span class="flow-text">只在手机上全屏 (col s12 m6)</span></div>
+        </div>
+          <pre><code class="language-markup">
+    &lt;div class="row">
+      &lt;div class="grid-example col s12">&lt;span class="flow-text">I am always full-width (col s12)&lt;/span>&lt;/div>
+      &lt;div class="grid-example col s12 m6">&lt;span class="flow-text">I am full-width on mobile (col s12 m6)&lt;/span>&lt;/div>
+    &lt;/div>
+          </code></pre>
+        <br>
+        <h4>响应式两列布局</h4>
+
+        <p>
+          我们将会用一个跟上面一样的例子，但是这个是响应式的，会在不同的屏幕宽度上呈现不同的效果。试着改变屏幕大小看看吧。
+        </p>
+
+        <div class="row">
+          <div class="col s12">
+            <div class='browser-window'>
+              <div class='top-bar'>
+                <div class='circles'>
+                  <div id="close-circle" class="circle"></div>
+                  <div id="minimize-circle" class="circle"></div>
+                  <div id="maximize-circle" class="circle"></div>
+                </div>
+              </div>
+              <div class='content'>
+                <div class="row">
+
+                  <div id="site-layout-example-top" class="col s12">
+                    <!-- <p class="flat-text-logo"></p> -->
+                  </div>
+                  <div id="site-layout-example-left" class="col s12 m4 l3">
+                    <p class="flat-text-header"></p>
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                  </div>
+                  <div id="site-layout-example-right" class="col s12 m8 l9">
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                    <p class="flat-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <pre><code class="language-markup">
+    &lt;!-- Navbar goes here -->
+
+    &lt;!-- Page Layout here -->
+    &lt;div class="row">
+
+      &lt;div class="col s12 m4 l3"> &lt;!-- Note that "m4 l3" was added -->
+      &lt;!-- Grey navigation panel
+
+      This content will be:
+      3-columns-wide on large screens,
+      4-columns-wide on medium screens,
+      12-columns-wide on small screens  -->
+
+      &lt;/div>
+
+      &lt;div class="col s12 m8 l9"> &lt;!-- Note that "m8 l9" was added -->
+      &lt;!-- Teal page content
+
+      This content will be:
+      9-columns-wide on large screens,
+      8-columns-wide on medium screens,
+      12-columns-wide on small screens  -->
+
+      &lt;/div>
+
+    &lt;/div>
+          </code></pre>
+
+        <h4>更多</h4>
+        <div class="row">
+          <div class="col grid-example s12 blue lighten-1"><span class="flow-text">s12</span></div>
+          <div class="col grid-example s12 m4 l2 teal lighten-1"><span class="flow-text">s12 m4 l2</span></div>
+          <div class="col grid-example s12 m4 l8 teal lighten-1"><span class="flow-text">s12 m4 l8</span></div>
+          <div class="col grid-example s12 m4 l2 teal lighten-1"><span class="flow-text">s12 m4 l2</span></div>
+          <div class="col grid-example s12 m6 l3 purple lighten-3"><span class="flow-text">s12 m6 l3</span></div>
+          <div class="col grid-example s12 m6 l3 purple lighten-3"><span class="flow-text">s12 m6 l3</span></div>
+          <div class="col grid-example s12 m6 l3 purple lighten-3"><span class="flow-text">s12 m6 l3</span></div>
+          <div class="col grid-example s12 m6 l3 purple lighten-3"><span class="flow-text">s12 m6 l3</span></div>
+        </div>
+        <div class="row">
+            <pre><code class="language-markup col s12">
+              &lt;div class="row">
+              &lt;div class="col s12">&lt;p>s12&lt;/p>&lt;/div>
+              &lt;div class="col s12 m3 l2">&lt;p>s12 m4&lt;/p>&lt;/div>
+              &lt;div class="col s12 m6 l8">&lt;p>s12 m4&lt;/p>&lt;/div>
+              &lt;div class="col s12 m3 l2">&lt;p>s12 m4&lt;/p>&lt;/div>
+              &lt;/div>
+              &lt;div class="row">
+              &lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+              &lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+              &lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+              &lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+              &lt;/div>
+            </code></pre>
+        </div>
+
+
+      </div>
+    </div>
+  <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#grid-container">Container</a></li>
+            <li><a href="#grid-intro">介绍</a></li>
+            <li><a href="#grid-offsets">偏移</a></li>
+            <li><a href="#grid-layouts">布局</a></li>
+            <li><a href="#grid-responsive">响应式布局</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

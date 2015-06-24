@@ -1,0 +1,166 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">快速上手</h1>
+
+    <div class="row">
+      <h4 class=" col s12 light  text-light">学习如何简单快速地使用Materialize</h4>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="section col s12 m9 l10">
+      <div id="download" class="row scrollspy">
+        <h2 class="col s12 header">下载</h2>
+        <p class="caption col s12">Materialize用两种方式实现。你可以选择任何一种你比较喜欢的方式引入到你的项目中。</p>
+
+        <div class="col s12 m6">
+          <p class="promo-caption">Materialize</p>
+          <p>标准版包含压缩后和未压缩两种.这个版本只需要很少的安装需要，如果你不了解Sass的话就用这种吧。</p>
+          <a id="download-source" class="btn waves-effect waves-light" href="http://materializecss.com/bin/materialize-v0.96.1.zip">Materialize<i class="mdi-file-file-download right"></i></a>
+        </div>
+        <div class="col s12 m6">
+          <p class="promo-caption">Sass</p>
+          <p>这个版本包含了SCSS源文件，这个版本中你可以自由选择要使用哪些组件。当然，如果选择这个版本你首先需要安装Sass编译器。</p>
+          <a id="download-sass" class="btn waves-effect waves-light" href="http://materializecss.com/bin/materialize-src-v0.96.1.zip">Source<i class="mdi-file-file-download right"></i></a>
+        </div>
+
+        <div class="col s12">
+          <br>
+          <p class="promo-caption">NPM</p>
+          <p>你可以通过NPM下载最新的版本.包含了未压缩和压缩后的两种.</p>
+          <pre class=" language-bash"><code class=" language-bash">
+    npm install materialize<span class="token operator">-</span>css
+          </code></pre>
+        </div>
+        <div class="col s12">
+          <br>
+          <p class="promo-caption">Bower</p>
+          <p>你可以通过Bower下载最新的版本.包含了未压缩和压缩后的两种.</p>
+          <pre class=" language-bash"><code class=" language-bash">
+    bower install materialize
+          </code></pre>
+        </div>
+      </div>
+
+      <div id="setup" class="row scrollspy">
+        <div class="col s12">
+          <h2 class="header">安装</h2>
+          <h4>项目结构</h4>
+          <p>下载完成后，解压到你的项目中。目录大概是这样的。</p>
+          <p>这有两种不同的版本， <code class=" language-markup">min</code>版本意味着这是压缩后的，能显著减少加载时间. 通常压缩版用在生产环境中，未压缩版用在开发环境中。</p>
+
+          <pre class=" language-markup"><code class=" directory-markup language-markup">
+    MyWebsite/
+    |--css/
+    |  |--materialize.css
+    |
+    |--font/
+    |  |--material-design-icons/
+    |  |--roboto/
+    |
+    |--js/
+    |  |--materialize.js
+    |
+    |--index.html
+          </code></pre>
+        </div>
+        <div class="col s12">
+          <h4>HTML</h4>
+          <p>下一步，你要确保文件在适当的位置引用。通常javascript文件在页面的底部引用。通过下面这个例子我想你懂得。</p>
+          <p>需要注意的是你必须在引用Materialize前引用Jquery文件!</p>
+        <pre class=" language-markup"><code class=" language-markup">
+  <span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment" spellcheck="true">&lt;!--Import materialize.css--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>css/materialize.min.css<span class="token punctuation">"</span></span>  <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>screen,projection<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+
+  <span class="token comment" spellcheck="true">&lt;!--Let browser know website is optimized for mobile--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1.0, maximum-scale<span class="token punctuation">=</span>1.0, user-scalable<span class="token punctuation">=</span>no<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment" spellcheck="true">&lt;!--Import jQuery before materialize.js--&gt;</span>
+  <span class="token script language-javascript"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://code.jquery.com/jquery-2.1.1.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span>
+  <span class="token script language-javascript"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>js/materialize.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+        </div>
+      </div>
+
+      <!-- Third Party Options -->
+      <div id="third-party-options" class="row scrollspy">
+        <div class="col s12">
+          <h2 class="header">第三方选项</h2>
+          <p class="caption">有几个社区提供的选项能让你方便的在你的项目中引入Materialize。不过这些可能没有经过测试，并且可能不会及时更新。</p>
+          <p class="promo-caption">Ruby Gem</p>
+          <p><a href="https://github.com/mkhairi/materialize-sass">文档</a> 在此。</p>
+          <pre><code class=" language-bash">
+  gem <span class="token string">'materialize-sass'</span>
+          </code></pre>
+          <p class="promo-caption">Meteor Package</p>
+          <pre><code class=" language-bash">
+  meteor add materialize<span class="token punctuation">:</span>materialize
+          </code></pre>
+          <p class="promo-caption">Ember Package</p>
+          <pre><code class=" language-bash">
+  <span class="token comment" spellcheck="true"># install via npm
+</span>  $ npm install ember<span class="token operator">-</span>cli<span class="token operator">-</span>materialize <span class="token operator">--</span>save<span class="token operator">-</span>dev
+  <span class="token comment" spellcheck="true"># make ember-cli fetch internal dependencies
+</span>  $ ember g ember<span class="token operator">-</span>cli<span class="token operator">-</span>materialize
+          </code></pre>
+
+        </div>
+      </div>
+
+      <div id="sass" class="row scrollspy">
+        <div class="col s12">
+          <h2 class="header">Sass</h2>
+          <p class="caption">如果你下载了Sass版本的，请仔细阅读，否则请忽略。</p>
+          <h4>编译</h4>
+          <p>好吧，你会发现下载文件中全是.scss文件，而不是常规的.css文件，并且还包含了大量的独立组件。不幸的是，浏览器并不能解析Sass，所以你必须先把这些文件编译为常规的.css文件。之后你便可以把这些引入到你的项目了。</p>
+
+        <pre><code class=" directory-markup language-markup">
+    MyWebsite/
+    |--css/
+    |  |--materialize.css &lt;-- compiled from scss/materialize.scss
+    |
+    |--font/
+    |  |--material-design-icons/
+    |  |--roboto/
+    |
+    |--js/
+    |  |--materialize.js
+    |
+    |--scss/
+    |  |--materialize.scss
+    |  |--components/
+    |
+    |--index.html
+        </code></pre>
+        </div>
+      </div>
+
+    </div>
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="table-of-contents">
+            <li><a href="#download">下载</a></li>
+            <li><a href="#setup">安装</a></li>
+            <li><a href="#third-party-options">第三方选项</a></li>
+            <li><a href="#sass">Sass</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

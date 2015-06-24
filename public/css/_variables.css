@@ -1,0 +1,33 @@
+.primary-bg {
+  background-color: #ee6e73;
+}
+.text-light {
+  color: #fff;
+}
+.text-pink {
+  color: #ee6e73;
+}
+.text-xs {
+  font-size: 10px;
+}
+.text-sm {
+  font-size: 12px;
+}
+.text-medium {
+  font-size: 14px;
+}
+.text-lg {
+  font-size: 16px;
+}
+.text-xl {
+  font-size: 18px;
+}
+.text-xxl {
+  font-size: 20px;
+}
+.btn-primary-bg {
+  background-color: #f3989b;
+}
+.btn-primary-bg:hover {
+  background-color: #f5a5a8;
+}

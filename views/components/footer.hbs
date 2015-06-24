@@ -1,0 +1,116 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">页脚</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="footer" class="section scrollspy">
+        <p class="caption">
+          页脚能很好的在页面底部展示一些超链接或者网站的一些其它信息。
+          用户一旦把滚动条拉到底部或者想要看一些网站信息都会从这里获取到想要的。
+        </p>
+        <h2 class="header">介绍</h2>
+
+        <p>注意: 我们用的是flexbox来设计html所以footer一直是显示在页面底部的。
+          所以，用html5标签<code class="language-markup">&lt;header></code>, <code class="language-markup">&lt;main></code>,
+          <code class="language-markup">&lt;footer></code>来保持页面结构是非常重要的。
+        </p>
+        <footer class="page-footer example">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              © 2014 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+        <div class="row">
+          <div class="col s12">
+            <br>
+            <pre><code class="language-markup">
+  &lt;footer class="page-footer">
+    &lt;div class="container">
+      &lt;div class="row">
+        &lt;div class="col l6 s12">
+          &lt;h5 class="white-text">Footer Content&lt;/h5>
+          &lt;p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.&lt;/p>
+        &lt;/div>
+        &lt;div class="col l4 offset-l2 s12">
+          &lt;h5 class="white-text">Links&lt;/h5>
+          &lt;ul>
+            &lt;li>&lt;a class="grey-text text-lighten-3" href="#!">Link 1&lt;/a>&lt;/li>
+            &lt;li>&lt;a class="grey-text text-lighten-3" href="#!">Link 2&lt;/a>&lt;/li>
+            &lt;li>&lt;a class="grey-text text-lighten-3" href="#!">Link 3&lt;/a>&lt;/li>
+            &lt;li>&lt;a class="grey-text text-lighten-3" href="#!">Link 4&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="footer-copyright">
+      &lt;div class="container">
+        © 2014 Copyright Text
+        &lt;a class="grey-text text-lighten-4 right" href="#!">More Links&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/footer>
+            </code></pre>
+          </div>
+        </div>
+
+      </div> <!-- End of footer section -->
+
+      <div id="sticky-footer" class="section scrollspy">
+        <h2 class="header">粘性页脚</h2>
+        <p>粘性页脚总是会在页面的底部，而不管页面内容是多少，当页面内容很多时还是会被撑到窗口以下的位置。</p>
+        <p>注意: 如果你要用这部分代码，那么可能会在IE浏览器中出现问题，因为IE并不支持flexbox</p>
+      </div>
+
+      <pre><code class="language-css">
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      </code></pre>
+
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#footer">页脚</a></li>
+            <li><a href="#sticky-footer">粘性页脚</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

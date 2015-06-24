@@ -1,0 +1,384 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">导航条</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="right" class="section scrollspy">
+
+        <p class="caption">我们用HTML5全新的nav标签并包含一个div作为外部的大框架，其中又分为两部分. 一个LOGO连接，和一组导航链接。你可以任意的设置排序模式。
+        </p>
+        <h2 class="header">链接右对齐</h2>
+        <p>在导航链接<code class="language-markup">&lt;ul></code>上用<code class="language-markup">right</code>使其右对齐。</p>
+        <nav>
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="#!" class="brand-logo">Logo</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="badges">标签</a></li>
+                <li><a href="buttons">按钮</a></li>
+                <li><a href="footer">页脚</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav><br>
+        <pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#" class="brand-logo">Logo&lt;/a>
+    &lt;ul id="nav-mobile" class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="footer">页脚&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+        </code></pre>
+      </div>
+
+      <div id="left" class="section scrollspy">
+        <h2 class="header">链接左对齐</h2>
+        <p>在导航链接<code class="language-markup">&lt;ul></code>上用<code class="language-markup">left</code>使其左对齐。</p>
+        <nav>
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="#!" class="brand-logo right">Logo</a>
+              <ul class="left hide-on-med-and-down">
+                <li><a href="badges">标签</a></li>
+                <li><a href="buttons">按钮</a></li>
+                <li><a href="footer">页脚</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav><br>
+        <pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#" class="brand-logo right">Logo&lt;/a>
+    &lt;ul id="nav-mobile" class="hide-on-med-and-down">
+      &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="footer">页脚&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+        </code></pre>
+      </div>
+
+      <div id="center" class="section scrollspy">
+        <h2 class="header">logo居中</h2>
+        <p>在medium及一下屏幕尺寸下logo会自动居中，如果你想一直让logo居中，在<code class="language-markup">&lt;a class="brand-logo"></code>上添加<code class="language-markup">center</code>class。
+          之后你要保证导航链接不会过长而与logo重叠</p>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Logo</a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="badges">标签</a></li>
+              <li><a href="buttons">按钮</a></li>
+            </ul>
+          </div>
+        </nav><br>
+        <pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#" class="brand-logo center">Logo&lt;/a>
+    &lt;ul id="nav-mobile" class="left hide-on-med-and-down">
+      &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="footer">页脚&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+        </code></pre>
+      </div>
+
+      <div id="active-label" class="section scrollspy">
+
+        <h2 class="header">选中状态</h2>
+        <p>
+          在li标签上使用active标签表示在当前页。
+        </p>
+
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Logo</a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="badges">标签</a></li>
+              <li><a href="buttons">按钮</a></li>
+              <li class="active"><a href="footer">页脚</a></li>
+            </ul>
+          </div>
+        </nav><br>
+
+        <pre><code class="language-markup">
+  &lt;div>
+    &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#!" class="brand-logo">Logo&lt;/a>
+    &lt;ul class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+      &lt;li class="active">&lt;a href="footer">页脚&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+    &lt;/nav>
+  &lt;/div>
+        </code></pre>
+      </div>
+
+      <div id="navbar-fixed" class="section scrollspy">
+
+        <h2 class="header">固定导航</h2>
+        <p>
+          为了使导航条固定，你必须添加一个使用了<code class="language-markup">navbar-fixed</code>class的div包裹着导航条。 This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.
+        </p>
+
+        <pre><code class="language-markup">
+  &lt;div class="navbar-fixed">
+    &lt;nav>
+      &lt;div class="nav-wrapper">
+      &lt;a href="#!" class="brand-logo">Logo&lt;/a>
+      &lt;ul class="right hide-on-med-and-down">
+        &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+        &lt;li class="active">&lt;a href="footer">页脚&lt;/a>&lt;/li>
+      &lt;/ul>
+      &lt;/div>
+    &lt;/nav>
+  &lt;/div>
+        </code></pre>
+      </div>
+
+      <div id="navbar-dropdown" class="section scrollspy">
+
+        <h2 class="header">下拉菜单</h2>
+        <p>
+          首先在网页中添加一个<code class="language-markup">ul</code>下拉框结构。
+          然后，在导航条中添加一个元素去触发它。确保触发元素上<code class="language-markup">data-activates</code>属性对应的值为之前下拉框的id。
+        </p>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="badges">标签</a></li>
+              <li><a href="buttons">按钮</a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            </ul>
+          </div>
+        </nav><br>
+        <pre><code class="language-markup">
+  &lt;!-- Dropdown Structure -->
+  &lt;ul id="dropdown1" class="dropdown-content">
+    &lt;li>&lt;a href="#!">one&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">two&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="#!">three&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+      &lt;a href="#!" class="brand-logo">Logo&lt;/a>
+      &lt;ul class="right hide-on-med-and-down">
+        &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+        &lt;!-- Dropdown Trigger -->
+        &lt;li>&lt;a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown&lt;i class="mdi-navigation-arrow-drop-down right">&lt;/i>&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+        </code></pre>
+        <p>初始化下拉框</p>
+        <pre><code class="language-javascript">
+  $(".dropdown-button").dropdown();
+        </code></pre>
+        <h5>点击触发</h5>
+        <p>
+         默认情况下当鼠标划过的时候会触发下拉框，如果你想要点击触发那么在前面的方法<code class="language-javascript">dropdown()</code>中添加
+         <code class="language-javascript">{ hover: false }</code>
+        </p>
+      </div>
+
+      <div id="icons" class="section scrollspy">
+        <h2 class="header">图标链接</h2>
+
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="javascript:;"><i class="mdi-action-search"></i></a></li>
+              <li><a href="javascript:;"><i class="mdi-action-view-module"></i></a></li>
+              <li><a href="javascript:;"><i class="mdi-navigation-refresh"></i></a></li>
+              <li><a href="javascript:;"><i class="mdi-navigation-more-vert"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <br>
+
+        <p>只需要添加一个<code class="language-markup">i</code>标签就能使其转化为图片链接。</p>
+<pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#!" class="brand-logo">Logo&lt;/a>
+    &lt;ul class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="javascript:;">&lt;i class="mdi-action-search">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="javascript:;">&lt;i class="mdi-action-view-module">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="javascript:;">&lt;i class="mdi-navigation-refresh">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="javascript:;">&lt;i class="mdi-navigation-more-vert">&lt;/i>&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/nav></code></pre>
+        <br>
+
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="javascript:;"><i class="mdi-action-search left"></i>Link with Left Icon</a></li>
+              <li><a href="javascript:;"><i class="mdi-action-view-module right"></i>Link with Right Icon</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <br>
+
+        <p>图标相对于文字的位置取决于你使用<code class="language-markup">left</code> or <code class="language-markup">right</code>class在i标签上。</p>
+        <pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#!" class="brand-logo">Logo&lt;/a>
+    &lt;ul class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="javascript:;">&lt;i class="mdi-action-search left">&lt;/i>Link with Left Icon&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="javascript:;">&lt;i class="mdi-action-view-module right">&lt;/i>Link with Right Icon&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+        </code></pre>
+        <br>
+      </div>
+
+      <div id="search" class="section scrollspy">
+        <h2 class="header">搜索条</h2>
+
+        <nav>
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="mdi-action-search"></i></label>
+                <i class="mdi-navigation-close"></i>
+              </div>
+            </form>
+          </div>
+        </nav>
+
+        <br>
+
+        <p>在导航条上添加一个搜索条。</p>
+<pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+      &lt;form>
+        &lt;div class="input-field">
+          &lt;input id="search" type="search" required>
+          &lt;label for="search">&lt;i class="mdi-action-search">&lt;/i>&lt;/label>
+          &lt;i class="mdi-navigation-close">&lt;/i>
+        &lt;/div>
+      &lt;/form>
+    &lt;/div>
+  &lt;/nav></code></pre>
+        <br>
+
+      </div>
+
+      <div id="mobile-collapse" class="section scrollspy">
+        <h2 class="header">手机缩合</h2>
+
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="badges">标签</a></li>
+              <li><a href="buttons">按钮</a></li>
+              <li><a href="footer">页脚</a></li>
+              <li><a href="mobile">手机</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="badges">标签</a></li>
+              <li><a href="buttons">按钮</a></li>
+              <li><a href="footer">页脚</a></li>
+              <li><a href="mobile">手机</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <br>
+
+        <p>
+          在<code class="language-markup">nav</code>上使用<code class="language-markup">button-collapse</code>class，当你浏览器的尺寸变小时，导航链接将会缩合到一个 <i class="mdi-navigation-menu"></i>的图标中。
+        </p>
+        <pre><code class="language-markup">
+  &lt;nav>
+    &lt;div class="nav-wrapper">
+    &lt;a href="#!" class="brand-logo">Logo&lt;/a>
+    &lt;a href="#" data-activates="mobile-demo" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+    &lt;ul class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="footer">页脚&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="mobile">手机&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;ul class="side-nav" id="mobile-demo">
+      &lt;li>&lt;a href="badges">标签&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="buttons">按钮&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="footer">页脚&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="mobile">手机&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+        </code></pre>
+
+        <br>
+        <h4>初始化</h4>
+        <p>添加过缩合class后，需要使用一段js代码来初始化它。</p>
+        <pre><code class="language-javascript">
+  $(".button-collapse").sideNav();
+        </code></pre>
+      </div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#right">链接右对齐</a></li>
+            <li><a href="#left">链接左对齐</a></li>
+            <li><a href="#center">图标居中</a></li>
+            <li><a href="#active-label">激活</a></li>
+            <li><a href="#navbar-fixed">固定导航</a></li>
+            <li><a href="#navbar-dropdown">下拉菜单</a></li>
+            <li><a href="#icons">图标链接</a></li>
+            <li><a href="#search">搜索条</a></li>
+            <li><a href="#mobile-collapse">手机缩合</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

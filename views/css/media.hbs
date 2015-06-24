@@ -1,0 +1,110 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">Color</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="images" class="section scrollspy">
+        <h2 class="header">图片</h2>
+        <p class="caption">Materialize为你定义了多样的图片样式</p>
+
+        <h4>响应式图片</h4>
+        <p>为了响应式地处理图片大小，添加 <code class="language-markup">responsive-img</code>class 到img标签中就可以。它定义了 <code class="language-markup">max-width: 100%</code> 和 <code class="language-markup">height:auto</code>两个属性。</p>
+        <pre><code class="language-markup">
+  &lt;img class="responsive-img" src="cool_pic.jpg">
+        </code></pre>
+        <h4>圆形图片</h4>
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <img src="/public/img/yuna.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 m10">
+                <span class="black-text">
+                  使用 <strong>circle</strong>class就能把方形图片转化为圆形的。
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <p>为了使图片看起来是圆的，使用 <code class="language-markup">class="circle"</code>class</p>
+            <pre><code class="language-markup">
+  &lt;div class="col s12 m8 offset-m2 l6 offset-l3">
+  &lt;div class="card-panel grey lighten-5 z-depth-1">
+  &lt;div class="row valign-wrapper">
+  &lt;div class="col s2">
+  &lt;img src="images/yuna.jpg" alt="" class="circle responsive-img"> &lt;!-- notice the "circle" class -->
+  &lt;/div>
+  &lt;div class="col s10">
+  &lt;span class="black-text">
+  This is a square image. Add the "circle" class to it to make it appear circular.
+  &lt;/span>
+  &lt;/div>
+  &lt;/div>
+  &lt;/div>
+  &lt;/div>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Videos Section -->
+      <div id="videos" class="section scrollspy">
+        <h2 class="header">视频</h2>
+        <p class="caption">我们提供了能自适应大小的内嵌视频容器。</p>
+        <h4>响应式内嵌</h4>
+        <p>为了使嵌入的视频支持响应式，提供一个带 <code class="language-markup">video-container</code>的div包裹着视频就行。</p>
+        <div class="video-container">
+          <iframe height=853 width=480 src="http://player.youku.com/embed/XNzMxNzY0NjYw" frameborder=0 allowfullscreen></iframe>
+        </div>
+        <pre><code class="language-markup">
+  &lt;div class="video-container">
+    &lt;iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen>&lt;/iframe>
+  &lt;/div>
+        </code></pre>
+        <!--<p>如果你的视频没有控制条，那么添加<code class="language-markup">no-controls</code>class到容器中。</p>-->
+        <!--<div class="video-container no-controls">-->
+          <!--<iframe height=853 width=480 src="http://player.youku.com/embed/XNzMxNzY0NjYw?rel=0;autohide=1" frameborder=0 allowfullscreen></iframe>-->
+        <!--</div>-->
+          <!--<pre><code class="language-markup">-->
+   <!--&lt;div class="video-container no-controls">-->
+     <!--&lt;iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0;autohide=1" frameborder="0" allowfullscreen>&lt;/iframe>-->
+   <!--&lt;/div>-->
+          <!--</code></pre>-->
+        <h4>响应式视频</h4>
+        <p>在video标签上使用 <code class="language-markup">responsive-video</code>class，就能让html5视频标签支持响应式。</p>
+
+        <video width="100%" controls>
+          <source src="http://materialdesign.qiniudn.com/Material%20design.mp4" type="video/mp4">
+        </video>
+        <pre><code class="language-markup">
+  &lt;video class="responsive-video" controls>
+    &lt;source src="movie.mp4" type="video/mp4">
+  &lt;/video>
+        </code></pre>
+
+      </div>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#images">图片</a></li>
+            <li><a href="#videos">视频</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

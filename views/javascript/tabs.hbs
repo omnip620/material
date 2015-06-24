@@ -1,0 +1,106 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">标签</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+
+      <div id="introduction" class="section scrollspy">
+        <h4>介绍</h4>
+        <p>
+          tabs由一系列无序列表组成，当点击每一个tab的时候，相对应的容器就会显示出来。使用<code class="language-markup">.disabled</code>class来禁用相应的tab。
+        </p>
+
+        <ul class="tabs tab-demo z-depth-1">
+          <li class="tab col s3"><a href="#test1">Test 1</a></li>
+          <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+          <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+          <li class="tab col s3"><a href="#test4">Test 4</a></li>
+        </ul>
+        <div id="test1" class="col s12"><p>Test 1</p></div>
+        <div id="test2" class="col s12"><p>Test 2</p></div>
+        <div id="test3" class="col s12"><p>Test 3</p></div>
+        <div id="test4" class="col s12"><p>Test 4</p></div>
+        <br>
+      </div>
+
+
+      <div id="structure" class="section scrollspy">
+        <h4>Tabs HTML结构</h4>
+        <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col s12">
+    &lt;ul class="tabs">
+      &lt;li class="tab col s3">&lt;a href="#test1">Test 1&lt;/a>&lt;/li>
+      &lt;li class="tab col s3">&lt;a class="active" href="#test2">Test 2&lt;/a>&lt;/li>
+      &lt;li class="tab col s3 disabled">&lt;a href="#test3">Disabled Tab&lt;/a>&lt;/li>
+      &lt;li class="tab col s3">&lt;a href="#test4">Test 4&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+    &lt;div id="test1" class="col s12">Test 1&lt;/div>
+    &lt;div id="test2" class="col s12">Test 2&lt;/div>
+    &lt;div id="test3" class="col s12">Test 3&lt;/div>
+    &lt;div id="test4" class="col s12">Test 4&lt;/div>
+  &lt;/div>
+        </code></pre>
+      </div>
+
+
+
+      <div id="initialization" class="section scrollspy">
+        <h4>初始化</h4>
+        <p>
+          Tabs会自动的初始化，但是如果动态添加的则需要手工调用下。
+        </p>
+        <pre><code class="language-javascript">
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+        </code></pre>
+      </div>
+
+      <div id="method" class="section scrollspy">
+        <h4>方法</h4>
+        <p>你可以在程序中指定选定哪个tab，使用<code class="language-javascript">select_tab</code>方法。
+        </p>
+        <pre><code class="language-javascript">
+  $(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
+        </code></pre>
+      </div>
+
+
+
+      <div id="preselecting" class="section scrollspy">
+        <h4>预选取</h4>
+        <p>默认情况下第一个Tab将会被选取，但是如果你不想这样，看下面的例子。</p>
+        <pre><code class="language-markup col s12">
+  &lt;li class="tab col s2">&lt;a class="active" href="#test3">Test 3&lt;/a>&lt;/li>
+        </code></pre>
+      </div>
+
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#structure">结构</a></li>
+            <li><a href="#initialization">初始化</a></li>
+            <li><a href="#method">方法</a></li>
+            <li><a href="#preselecting">预选取</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

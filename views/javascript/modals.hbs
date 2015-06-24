@@ -1,0 +1,190 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">模态框</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+        <h4>介绍</h4>
+        <p>模态效果主要用在对话框，确认信息，或者其它需要内容提升的地方。你需要在按钮上指定Modal ID来触发它。
+          在另外一个按钮上添加一个<code class="language-css">.modal-close</code>class来使其作为一个关闭按钮。
+        </p>
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal With Fixed Footer</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal Bottom Sheet Style</a>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+          </div>
+        </div>
+        <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+          </div>
+        </div>
+        <div id="modal3" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="images/yuna.jpg" alt="" class="circle">
+                <span class="title">Title</span>
+                <p>First Line <br>
+                  Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-file-folder circle"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                  Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-action-assessment circle green"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                  Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-av-play-arrow circle red"></i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                  Second Line
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="structure" class="scrollspy section">
+        <h4>Modals HTML 结构</h4>
+          <pre><code class="language-markup">
+  &lt;!-- Modal Trigger -->
+  &lt;a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal&lt;/a>
+
+  &lt;!-- Modal Structure -->
+  &lt;div id="modal1" class="modal">
+    &lt;div class="modal-content">
+      &lt;h4>Modal Header&lt;/h4>
+      &lt;p>A bunch of text&lt;/p>
+    &lt;/div>
+    &lt;div class="modal-footer">
+      &lt;a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree&lt;/a>
+    &lt;/div>
+  &lt;/div>
+          </code></pre>
+      </div>
+
+
+      <div id="fixed-footer" class="scrollspy section">
+        <h4>固定底部</h4>
+        <p>如果你模态框中的内容很多很长，但是你想任何时候都能看到底部的操作按钮，那么在modal上使用<code class="language-markup">modal-fixed-footer</code> </p>
+          <pre><code class="language-markup">
+  &lt;!-- Modal Trigger -->
+  &lt;a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal&lt;/a>
+
+  &lt;!-- Modal Structure -->
+  &lt;div id="modal1" class="modal modal-fixed-footer">
+    &lt;div class="modal-content">
+      &lt;h4>Modal Header&lt;/h4>
+      &lt;p>A bunch of text&lt;/p>
+    &lt;/div>
+      &lt;div class="modal-footer">
+      &lt;a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree&lt;/a>
+    &lt;/div>
+  &lt;/div>
+          </code></pre>
+      </div>
+
+      <div id="button-trigger" class="scrollspy section">
+        <h4>按钮触发</h4>
+        <p>如果你还是喜欢用Button那么添加一个<code class="language-markup">data-target</code>替代href属性 </p>
+
+          <pre><code class="language-markup">
+  &lt;!-- Modal Trigger -->
+  &lt;button data-target="modal1" class="btn modal-trigger">Modal&lt;/button>
+          </code></pre>
+      </div>
+
+
+
+      <div id="initialization" class="scrollspy section">
+        <h4>初始化</h4>
+          <pre><code class="language-javascript">
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+          </code></pre>
+        <p>当然你也可以通过函数来触发modal，看下面的例子:</p>
+          <pre><code class="language-javascript">
+  $('#modal1').openModal();
+          </code></pre>
+        <p>同时你也可以通过函数来关闭它:</p>
+          <pre><code class="language-javascript">
+  $('#modal1').closeModal();
+          </code></pre>
+      </div>
+
+
+
+      <div id="options" class="scrollspy section">
+        <h4>选项</h4>
+        <p>通过一些选项你可以自定义模态框的行为。看代码：</p>
+        <pre><code class="language-javascript">
+  $('.modal-trigger').leanModal({
+    dismissible: true, // 点击模态框外部则关闭模态框
+    opacity: .5, // 背景透明度
+    in_duration: 300, // 切入时间
+    out_duration: 200, // 切出时间
+    ready: function() { alert('Ready'); }, // 当模态框打开时执行的函数
+    complete: function() { alert('Closed'); } // 当模态框关闭时执行的函数
+    }
+  );
+        </code></pre>
+      </div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#structure">结构</a></li>
+            <li><a href="#fixed-footer">底部固定</a></li>
+            <li><a href="#button-trigger">按钮触发</a></li>
+            <li><a href="#initialization">初始化</a></li>
+            <li><a href="#options">选项</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

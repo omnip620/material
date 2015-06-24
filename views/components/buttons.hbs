@@ -1,0 +1,126 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">按钮</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="raised" class="section scrollspy">
+        <p class="caption">
+          在Material Design中共有三种不同的按钮类型。上浮按钮作为标准的按钮意味着可以执行一些点击，并且在视觉上提供一些阴影处理。
+          浮动的圆形按钮常常意味着非常重要的功能。扁平按钮通常用在一些模块的内部，例如卡片或者弹出层。
+        </p>
+        <h2 class="header">上浮</h2>
+        <a class="waves-effect waves-light btn">button</a>
+        <a class="waves-effect waves-light btn"><i class="mdi-file-cloud left"></i>button</a>
+        <a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
+        <pre><code class="language-markup col s12">
+  &lt;a class="waves-effect waves-light btn">Stuff&lt;/a>
+  &lt;a class="waves-effect waves-light btn">&lt;i class="mdi-file-cloud left">&lt;/i>button&lt;/a>
+  &lt;a class="waves-effect waves-light btn">&lt;i class="mdi-file-cloud right">&lt;/i>button&lt;/a>
+        </code></pre>
+      </div>
+      <div id="floating" class="section scrollspy">
+        <h2 class="header">浮动</h2>
+        <a class="btn-floating waves-effect waves-light btn-large red"><i class="mdi-content-add"></i></a><br><br>
+        <pre><code class="language-markup col s12">
+  &lt;a class="btn-floating btn-large waves-effect waves-light red">&lt;i class="mdi-content-add">&lt;/i>&lt;/a>
+        </code></pre>
+        <br>
+
+        <h4 class="light">固定</h4>
+        <p>如果你想固定一个浮动按钮，当鼠标划过的时候显示更多的操作。请看页面右下角的示例。</p>
+        <pre><code class="language-markup col s12">
+  &lt;div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    &lt;a class="btn-floating btn-large red">
+      &lt;i class="large mdi-editor-mode-edit">&lt;/i>
+    &lt;/a>
+    &lt;ul>
+      &lt;li>&lt;a class="btn-floating red">&lt;i class="large mdi-editor-insert-chart">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>&lt;a class="btn-floating yellow darken-1">&lt;i class="large mdi-editor-format-quote">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>&lt;a class="btn-floating green">&lt;i class="large mdi-editor-publish">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>&lt;a class="btn-floating blue">&lt;i class="large mdi-editor-attach-file">&lt;/i>&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+        </code></pre>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating btn-large red">
+            <i class="large mdi-editor-mode-edit"></i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+            <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+            <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="flat" class="section scrollspy">
+        <h2 class="header">扁平</h2>
+        <a class="waves-effect waves-teal btn-flat">Button</a>
+        <pre><code class="language-markup col s12">
+  &lt;a class="waves-effect waves-teal btn-flat">Button&lt;/a>
+        </code></pre>
+      </div>
+      <div id="submit" class="section scrollspy">
+        <h2 class="header">提交</h2>
+
+        <p>
+          当你想提交一个表单，不要用input标签，用一个包含<code>type="submit"</code>的button标签。
+        </p>
+        <button class="btn waves-effect waves-light" type="submit" name="action">提交<i class="mdi-content-send right"></i></button>
+        <pre><code class="language-markup">
+  &lt;button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    &lt;i class="mdi-content-send right">&lt;/i>
+  &lt;/button>
+        </code></pre>
+      </div>
+      <div id="large" class="section scrollspy">
+        <h2 class="header">大号</h2>
+        <p>大块头通常能引起你的注意。</p>
+        <a class="waves-effect waves-light btn-large">Button</a>
+        <a class="waves-effect waves-light btn-large"><i class="mdi-file-cloud left"></i>button</a>
+        <a class="waves-effect waves-light btn-large"><i class="mdi-file-cloud right"></i>button</a>
+        <pre><code class="language-markup col s12">
+  &lt;a class="waves-effect waves-light btn-large">Button&lt;/a>
+  &lt;a class="waves-effect waves-light btn-large">&lt;i class="mdi-file-cloud left">&lt;/i>button&lt;/a>
+  &lt;a class="waves-effect waves-light btn-large">&lt;i class="mdi-file-cloud right">&lt;/i>button&lt;/a>
+        </code></pre>
+      </div>
+      <div id="disabled" class="section scrollspy">
+        <h2 class="header">禁用</h2>
+        <p>在任何类型的按钮中都能使用这个特性。</p>
+        <a class="btn-large disabled">Button</a>
+        <a class="btn disabled">Button</a>
+        <a class="btn-flat disabled">Button</a>
+        <a class="btn-floating disabled"><i class="mdi-content-add"></i></a>
+        <pre><code class="language-markup col s12">
+  &lt;a class="btn-large disabled">Button&lt;/a>
+  &lt;a class="btn disabled">Button&lt;/a>
+  &lt;a class="btn-flat disabled">Button&lt;/a>
+  &lt;a class="btn-floating disabled">&lt;i class="mdi-content-add">&lt;/i>&lt;/a>
+        </code></pre>
+      </div>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#raised">上浮</a></li>
+            <li><a href="#floating">浮动</a></li>
+            <li><a href="#flat">扁平</a></li>
+            <li><a href="#submit">提交</a></li>
+            <li><a href="#large">大号</a></li>
+            <li><a href="#disabled">禁用</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

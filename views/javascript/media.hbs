@@ -1,0 +1,181 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">多媒体</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <p class="caption">
+        多媒体模块包含了大部分的多媒体模块像是图片，音频，视频，等等。
+      </p>
+
+      <div id="materialbox" class="scrollspy section">
+        <h2 class="header">Material图片盒子</h2>
+        <p class="caption">Material图片盒子是一个轻量级的图片展示框架。
+          当用户点击的时候图片会放大。使图片在整个屏幕居中并放大，请放心这一切都是极度平滑的。当图片处于放大状态下只需再点击一次图片或者滚动滑轮或者按下ESC键就可以复原。</p>
+        <img class="materialboxed responsive-img" width="650" src="/public/img/sample-1.jpg">
+
+        <p>只需在img标签上添加一个<code class="language-markup">materialboxed</code> class即可。</p>
+      <pre><code class="language-markup">
+  &lt;img class="materialboxed" width="650" src="images/sample-1.jpg">
+      </code></pre>
+
+
+        <h4>初始化</h4>
+        <p>Materialbox 会自动初始化，但是当你动态添加的时候就要手动初始化了。</p>
+       <pre><code class="language-javascript">
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+       </code></pre>
+
+        <h4>Captions</h4>
+        <p>添加一个<code class="language-markup">data-caption</code>属性，就能为放大的图片设置一个标题。</p>
+        <img class="materialboxed" data-caption="A picture of some deer and tons of trees" width="250" src="/public/img/sample-1.jpg">
+          <pre><code class="language-markup">
+  &lt;img class="materialboxed" data-caption="A picture of some deer and tons of trees" width="250" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+          </code></pre>
+      </div>
+
+      <br>
+
+
+      <!--  Slider Section  -->
+      <div id="slider" class="scrollspy section">
+        <h3 class="header">轮播</h3>
+        <p class="caption">
+          这个轮播模块简单且优雅，你可以添加一个具有动态飞入效果的标题，还可以添加一个页码指示器来指明现在展示的是哪一张图片。
+        </p>
+        <p>Note:这个完全用Hammer.js做了移动端的滑动适配!试着在手机浏览器上滑动图片。</p><br>
+
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+        </div><br>
+
+      <pre><code class="language-markup">
+  &lt;div class="slider">
+    &lt;ul class="slides">
+       &lt;li>
+         &lt;img src="http://lorempixel.com/580/250/nature/1"> &lt;!-- random image -->
+         &lt;div class="caption center-align">
+         &lt;h3>This is our big Tagline!&lt;/h3>
+         &lt;h5 class="light grey-text text-lighten-3">Here's our small slogan.&lt;/h5>
+         &lt;/div>
+       &lt;/li>
+       &lt;li>
+         &lt;img src="http://lorempixel.com/580/250/nature/2"> &lt;!-- random image -->
+         &lt;div class="caption left-align">
+         &lt;h3>Left Aligned Caption&lt;/h3>
+         &lt;h5 class="light grey-text text-lighten-3">Here's our small slogan.&lt;/h5>
+         &lt;/div>
+       &lt;/li>
+       &lt;li>
+         &lt;img src="http://lorempixel.com/580/250/nature/3"> &lt;!-- random image -->
+         &lt;div class="caption right-align">
+         &lt;h3>Right Aligned Caption&lt;/h3>
+         &lt;h5 class="light grey-text text-lighten-3">Here's our small slogan.&lt;/h5>
+         &lt;/div>
+       &lt;/li>
+       &lt;li>
+         &lt;img src="http://lorempixel.com/580/250/nature/4"> &lt;!-- random image -->
+         &lt;div class="caption center-align">
+         &lt;h3>This is our big Tagline!&lt;/h3>
+         &lt;h5 class="light grey-text text-lighten-3">Here's our small slogan.&lt;/h5>
+         &lt;/div>
+       &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+      </code></pre>
+
+        <br>
+        <h4>全屏轮播</h4>
+        <p>添加一个<code class="language-markup">fullscreen</code>calss就能让轮播全屏，看例子。</p>
+        <a href="fullscreen-slider-demo.html" target="_blank" class="btn-large waves-effect waves-light">Open Demo</a>
+
+        <br>
+        <h4>初始化</h4>
+       <pre><code class="language-javascript">
+  $(document).ready(function(){
+    $('.slider').slider({full_width: true});
+  });
+       </code></pre>
+        <br>
+        <h4>选项</h4>
+        <table class="hoverable">
+          <thead>
+          <tr>
+            <th>名称</th>
+            <th>描述</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Indicators（指示器）</td>
+            <td>是否显示指示器 (Default: True)</td>
+          </tr>
+          <tr>
+            <td>Height（高度）</td>
+            <td>轮播图高度 (Default: 400)</td>
+          </tr>
+          <tr>
+            <td>Transition（动画）</td>
+            <td>设置动画时间 (Default: 500)</td>
+          </tr>
+          <tr>
+            <td>Interval（轮播间隔）</td>
+            <td>设置图片之间动画时间间隔 (Default: 6000)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#materialbox">Material图片盒子</a></li>
+            <li><a href="#slider">轮播图</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">下拉框</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="introduction" class="scrollspy section">
+        <h4>介绍</h4>
+        <p>在任意的按钮上添加一个下拉列表。同时确保<code class="language-markup">data-activates</code>属性值与<code class="language-markup">&lt;ul></code>标签id值相同。</p>
+        <p>你可以在<code class="language-markup">&lt;li class="divider">&lt;/li></code> tag. </p>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <pre><code class="language-markup">
+  &lt;!-- Dropdown Trigger -->
+  &lt;a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!&lt;/a>
+
+  &lt;!-- Dropdown Structure -->
+  &lt;ul id='dropdown1' class='dropdown-content'>
+    &lt;li>&lt;a href="#!">one&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#!">two&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="#!">three&lt;/a>&lt;/li>
+  &lt;/ul>
+        </code></pre>
+      </div>
+
+      <div id="options" class="section scrollspy">
+        <h4>Options</h4>
+        <table class="striped">
+          <thead>
+          <tr>
+            <th>名称</th>
+            <th>描述</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>inDuration（展开时间）</td>
+            <td>展开下拉框所需要的时间 默认: 300ms</td>
+          </tr>
+          <tr>
+            <td>outDuration（闭合时间）</td>
+            <td>闭合下拉框所需要的时间 默认: 225ms</td>
+          </tr>
+          <tr>
+            <td>constrain_width（限制宽度）</td>
+            <td>如果为true，则下拉框的宽度与触发按钮的宽度一致 默认: true</td>
+          </tr>
+          <tr>
+            <td>hover（悬浮）</td>
+            <td>为true，则当鼠标划过即展开下拉框 默认: false</td>
+          </tr>
+          <tr>
+            <td>gutter（边距）</td>
+            <td>设定选项与下拉框之间的边距 默认: 0</td>
+          </tr>
+          <tr>
+            <td>belowOrigin（下方位置）</td>
+            <td>为true，则下拉框的位置完全在触发按钮的下方 默认: false</td>
+          </tr>
+          </tbody>
+        </table>
+        <p>只需添加一个data属性就可以用。如果你想在外部控制，那么就是用jquery插件的方式，看下面的代码例子。 </p>
+        <pre><code class="language-markup">
+  &lt;a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>Drop Me!&lt;/a>
+        </code></pre>
+      </div>
+
+
+
+      <div id="initialization" class="section scrollspy">
+        <h4>初始化</h4>
+        <p>只需要在你动态添加此模块的时候初始化它。</p>
+        <pre><code class="language-javascript">
+  $('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: false, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 0, // Spacing from edge
+    belowOrigin: false // Displays dropdown below the button
+    }
+  );
+        </code></pre>
+      </div>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#options">选项</a></li>
+            <li><a href="#initialization">初始化</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+//about background
+
+$primary-bg=#ee6e73
+.primary-bg
+  background-color $primary-bg
+
+
+//about text color
+$text-light=#ffffff
+.text-light
+  color $text-light
+
+
+$text-pink=#ee6e73
+.text-pink
+    color $text-pink
+
+//text size
+$text-size=xs sm medium lg xl xxl
+
+for size,i in $text-size
+  .text-{size}{
+    font-size (i+5)*2px
+  }
+
+
+
+
+//about button color
+$btn-primary-bg=#f3989b;
+.btn-primary-bg
+  background-color $btn-primary-bg;
+  &:hover
+    background-color #f5a5a8;

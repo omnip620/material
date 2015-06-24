@@ -1,0 +1,306 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">表格</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="tables" class="section scrollspy">
+        <p class="caption">组织数据的最好方式之一就是使用表格，我们提供了一些有用的class来帮助你更方便容易的给表格赋予各种样式。另外，为了提升手机端的体验，所有表格在手机端都是自动居中对齐。
+        </p>
+        <h2 class="header">无边</h2>
+        <div class="row">
+          <div class="col s12">
+            <p>默认表格是无边的</p>
+            <table>
+              <thead>
+              <tr>
+                <th data-field="id">名称</th>
+                <th data-field="name">商品名称</th>
+                <th data-field="price">商品价格</th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>￥0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>￥3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>￥7.00</td>
+              </tr>
+              <tr>
+                <td>Shannon</td>
+                <td>KitKat</td>
+                <td>￥9.99</td>
+              </tr>
+              </tbody>
+
+            </table>
+          </div>
+          <div class="col s12">
+            <pre><code class="language-markup">
+    &lt;table>
+      &lt;thead>
+        &lt;tr>
+          &lt;th data-field="id">Name&lt;/th>
+          &lt;th data-field="name">Item Name&lt;/th>
+          &lt;th data-field="price">Item Price&lt;/th>
+        &lt;/tr>
+      &lt;/thead>
+
+      &lt;tbody>
+        &lt;tr>
+          &lt;td>Alvin&lt;/td>
+          &lt;td>Eclair&lt;/td>
+          &lt;td>$0.87&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+          &lt;td>Alan&lt;/td>
+          &lt;td>Jellybean&lt;/td>
+          &lt;td>$3.76&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+          &lt;td>Jonathan&lt;/td>
+          &lt;td>Lollipop&lt;/td>
+          &lt;td>$7.00&lt;/td>
+        &lt;/tr>
+      &lt;/tbody>
+    &lt;/table>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="bordered" class="section scrollspy">
+        <h2 class="header">有边</h2>
+        <div class="row">
+          <div class="col s12">
+            <p>使用<code class="language-markup">class="bordered"</code>来为表格添加边框。</p>
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th data-field="id">名称</th>
+                <th data-field="name">商品名称</th>
+                <th data-field="price">商品价格</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>￥0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>￥3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>￥7.00</td>
+              </tr>
+              <tr>
+                <td>Shannon</td>
+                <td>KitKat</td>
+                <td>￥9.99</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="striped" class="section scrollspy">
+        <h2 class="header">网格</h2>
+        <div class="row">
+          <div class="col s12">
+            <p>使用<code class="language-markup">class="striped"</code>使表格具有条纹效果。</p>
+            <table class="striped">
+              <thead>
+              <tr>
+                <th data-field="id">名称</th>
+                <th data-field="name">商品名称</th>
+                <th data-field="price">商品价格</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>￥0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>￥3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>￥7.00</td>
+              </tr>
+              <tr>
+                <td>Shannon</td>
+                <td>KitKat</td>
+                <td>￥9.99</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="hoverable" class="section scrollspy">
+        <h2 class="header">悬停</h2>
+        <div class="row">
+          <div class="col s12">
+            <p>使用<code class="language-markup">class="hoverable"</code>使鼠标悬停/划过时高亮。</p>
+            <table class="hoverable">
+              <thead>
+              <tr>
+                <th data-field="id">名称</th>
+                <th data-field="name">商品名称</th>
+                <th data-field="price">商品价格</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>￥0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>￥3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>￥7.00</td>
+              </tr>
+              <tr>
+                <td>Shannon</td>
+                <td>KitKat</td>
+                <td>￥9.99</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="centered" class="section scrollspy">
+        <h2 class="header">居中</h2>
+        <div class="row">
+          <div class="col s12">
+            <p>使用<code class="language-markup">class="centered"</code>使单元格中的文字居中。</p>
+            <table class="centered">
+              <thead>
+              <tr>
+                <th data-field="id">名称</th>
+                <th data-field="name">商品名称</th>
+                <th data-field="price">商品价格</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>￥0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>￥3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>￥7.00</td>
+              </tr>
+              <tr>
+                <td>Shannon</td>
+                <td>KitKat</td>
+                <td>￥9.99</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="responsive" class="section scrollspy">
+        <h2 class="header">响应式</h2>
+        <div class="row">
+          <div class="col s12">
+            <p>使用<code class="language-markup">class="responsive-table"</code>在小屏幕设备上具有滚动条。</p>
+            <table class="responsive-table">
+              <thead>
+              <tr>
+                <th data-field="id">名称</th>
+                <th data-field="name">商品名称</th>
+                <th data-field="price">商品价格</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>￥0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>￥3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>￥7.00</td>
+              </tr>
+              <tr>
+                <td>Shannon</td>
+                <td>KitKat</td>
+                <td>￥9.99</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#tables">无边</a></li>
+            <li><a href="#bordered">有边</a></li>
+            <li><a href="#striped">条纹</a></li>
+            <li><a href="#hoverable">悬停</a></li>
+            <li><a href="#centered">居中</a></li>
+            <li><a href="#responsive">响应式</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

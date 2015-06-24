@@ -1,0 +1,73 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">滚动监听</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+
+      <div id="introduction" class="section scrollspy">
+        <h4>介绍</h4>
+        <p>滚动监听能让你在页面滚动到适当的位置时监听元素也能指示在适当的位置。还是右边的导航，最好的例子。
+        </p>
+      </div>
+
+      <div id="structure" class="section scrollspy">
+        <h4>结构</h4>
+        <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col s12 m9 l10">
+    &lt;div id="introduction" class="section scrollspy">
+    &lt;p>Content &lt;/p>
+  &lt;/div>
+
+  &lt;div id="structure" class="section scrollspy">
+    &lt;p>Content &lt;/p>
+  &lt;/div>
+
+  &lt;div id="initialization" class="section scrollspy">
+    &lt;p>Content &lt;/p>
+  &lt;/div>
+  &lt;/div>
+    &lt;div class="col hide-on-small-only m3 l2">
+    &lt;ul class="section table-of-contents">
+      &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#structure">Structure&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#initialization">Intialization&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+        </code></pre>
+      </div>
+
+
+
+      <div id="initialization" class="section scrollspy">
+        <h4>初始化</h4>
+        <pre><code class="language-javascript">
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+        </code></pre>
+      </div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">介绍</a></li>
+            <li><a href="#structure">结构</a></li>
+            <li><a href="#initialization">初始化</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

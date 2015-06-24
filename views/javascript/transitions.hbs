@@ -1,0 +1,73 @@
+<div id="index-banner" class="index-banner section no-pad-bot primary-bg">
+  <div class="container">
+    <h1 class=" center-on-small-only  text-light ">渐变</h1>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="section col s12 m9 l10">
+      <div id="staggered" class="section scrollspy">
+        <p class="caption">
+          我们已经做了一些渐变动画来给你想要的元素加上特效。我们强烈的建议使用<a href="/scrollfire">ScrollFire插件</a>以便能在页面滚动的时候触发transition。
+        </p>
+        <h4>列表渐现</h4>
+        <p>创建一个层叠展示的<code class="language-markup">UL</code>标签。确保<code class="language-markup">UL</code>中的<code class="language-markup">li</code>标签<code class="language-css">opacity: 0</code></p>
+        <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">点击</a>
+        <pre><code class="language-markup">
+  &lt;a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Click Me&lt;/a>
+        </code></pre>
+        <ul id="staggered-test">
+          <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+          </li>
+          <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+          </li>
+          <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+          </li>
+          <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+          </li>
+          <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="fadeImage" class="section scrollspy">
+        <h4>图片渐现</h4>
+        <a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')">点击</a>
+        <pre><code class="language-markup">
+  &lt;a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')">Click Me&lt;/a>
+        </code></pre>
+        <img id="image-test" class="responsive-img" src="https://unsplash.imgix.net/reserve/nE6neNVdRPSIasnmePZe_IMG_1950.jpg?dpr=1.25&fit=crop&fm=jpg&h=700&q=75&w=1050">
+      </div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="col hide-on-small-only m3 l2">
+      <div class="toc-wrapper">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#staggered">列表渐现</a></li>
+            <li><a href="#fadeImage">图片渐现</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{#contentFor 'pagescripts'}}
+
+{{/contentFor}}
