@@ -44,5 +44,6 @@ router.get('/waves', index.waves);
 
 router.get('/mobile', index.mobile);
 router.get('/showcase', index.showcase);
+router.get('/fullscreen-slider-demo', index.fsd);
 
 module.exports = router;

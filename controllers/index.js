@@ -121,3 +121,6 @@ exports.mobile = function (req, res) {
 exports.showcase = function (req, res) {
   return res.render('showcase');
 };
+exports.fsd = function (req, res) {
+  return res.render('javascript/fullscreen-slider-demo');
+};
