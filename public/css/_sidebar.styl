@@ -7,6 +7,10 @@
   &:hover
     overflow-y auto
 
+@media screen and (max-width: 992px)
+  .sidebar
+    display none
+
 .sidebar .logo
   width 100%
   text-align center
@@ -27,14 +31,13 @@
   color #444
   padding 0 25px
 
-
 .sidebar .collapsible
   border none
   box-shadow none
   margin 0
 
-.sidebar .collapsible-accordion>li.active
-  background-color rgba(0,0,0,0.05)
+.sidebar .collapsible-accordion > li.active
+  background-color rgba(0, 0, 0, 0.05)
 
 .sidebar .collapsible-header
   border none
@@ -45,9 +48,17 @@
   border none
   ul
     font-weight 300
+
 .sidebar .collapsible-body a
-      padding-left 40px
+  padding-left 40px
 
 .sidebar-collapsible
   &:hover
-    background-color #FFFFFF!important
+    background-color #FFFFFF !important
+
+.sidebar .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
+  background-color: #ee6e73;
+}
+.sidebar .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
+  color: #fff;
+}

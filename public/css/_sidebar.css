@@ -8,6 +8,11 @@
 .sidebar:hover {
   overflow-y: auto;
 }
+@media screen and (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+}
 .sidebar .logo {
   width: 100%;
   text-align: center;
@@ -31,7 +36,7 @@
   box-shadow: none;
   margin: 0;
 }
-.sidebar .collapsible-accordion>li.active {
+.sidebar .collapsible-accordion > li.active {
   background-color: rgba(0,0,0,0.05);
 }
 .sidebar .collapsible-header {
@@ -50,4 +55,12 @@
 }
 .sidebar-collapsible:hover {
   background-color: #fff !important;
+}
+.sidebar .collapsible-body li.active,
+.side-nav.fixed .collapsible-body li.active {
+  background-color: #ee6e73;
+}
+.sidebar .collapsible-body li.active a,
+.side-nav.fixed .collapsible-body li.active a {
+  color: #fff;
 }

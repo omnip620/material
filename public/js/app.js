@@ -2,6 +2,9 @@
  * Created by panew on 15-6-16.
  */
 $(function () {
+
+
+
   // Floating-Fixed table of contents
   if ($('nav').length) {
     $('.toc-wrapper').pushpin({top: $('nav').height()});
@@ -12,16 +15,33 @@ $(function () {
   else {
     $('.toc-wrapper').pushpin({top: 0});
   }
+  function activeSidebar() {
+    var pathname = window.location.pathname.substring(1);
+    var pathList = $('aside li a');
+    for (var i = 0, l = pathList.length; i < l; i++) {
+      var tempa=pathList.eq(i);
 
+      if(tempa.attr('href')===pathname){
+        console.log(pathname,tempa.attr('href'))
+        tempa.parent().addClass('active');
+        tempa.parents('.collapsible-body').show().parent().addClass('active');
+      }
+      //console.log(pathList.eq(i).attr('href'));
+    }
+  }
 
-
+  activeSidebar();
 
   function rgb2hex(rgb) {
-    if (/^#[0-9A-F]{6}$/i.test(rgb)) { return rgb; }
+    if (/^#[0-9A-F]{6}$/i.test(rgb)) {
+      return rgb;
+    }
 
     rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
 
-    if (rgb === null) { return "N/A"; }
+    if (rgb === null) {
+      return "N/A";
+    }
 
     function hex(x) {
       return ("0" + parseInt(x).toString(16)).slice(-2);
@@ -42,8 +62,8 @@ $(function () {
   });
 
   var toggleContainersButton = $('#container-toggle-button');
-  toggleContainersButton.click(function(){
-    $('body .browser-window .container, .had-container').each(function(){
+  toggleContainersButton.click(function () {
+    $('body .browser-window .container, .had-container').each(function () {
       $(this).toggleClass('had-container');
       $(this).toggleClass('container');
       if ($(this).hasClass('container')) {
@@ -58,20 +78,21 @@ $(function () {
 
   // Toggle Flow Text
   var toggleFlowTextButton = $('#flow-toggle');
-  toggleFlowTextButton.click( function(){
-    $('#flow-text-demo').children('p').each(function(){
+  toggleFlowTextButton.click(function () {
+    $('#flow-text-demo').children('p').each(function () {
       $(this).toggleClass('flow-text');
     })
   });
   $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 ,// Creates a dropdown of 15 years to control year
-    format: 'yyyy-mm-dd '
+    selectYears : 15,// Creates a dropdown of 15 years to control year
+    format      : 'yyyy-mm-dd '
   });
   $('.scrollspy').scrollSpy();
   $('select').not('.disabled').material_select();
   $('.slider').slider({full_width: true});
   $('.modal-trigger').leanModal();
+
 
 });
 

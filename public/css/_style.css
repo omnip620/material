@@ -12,6 +12,10 @@ footer {
   padding-left: 240px;
 }
 @media only screen and (max-width: 992px) {
+  main,
+  footer {
+    padding-left: 0;
+  }
   .promo {
     width: 60%;
     margin: 0 auto;

@@ -21,8 +21,8 @@ exports.helpers = function (req, res) {
   return res.render('css/helpers');
 };
 
-exports.media = function (req, res) {
-  return res.render('css/media');
+exports.mediacss = function (req, res) {
+  return res.render('css/mediacss');
 };
 
 exports.sass = function (req, res) {

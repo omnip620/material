@@ -11,7 +11,7 @@ router.get('/start', index.start);
 router.get('/color', index.color);
 router.get('/grid', index.grid);
 router.get('/helpers', index.helpers);
-router.get('/media', index.media);
+router.get('/media-css', index.mediacss);
 router.get('/sass', index.sass);
 router.get('/shadow', index.shadow);
 router.get('/table', index.table);

@@ -44,6 +44,11 @@ html {
 .sidebar:hover {
   overflow-y: auto;
 }
+@media screen and (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+}
 .sidebar .logo {
   width: 100%;
   text-align: center;
@@ -67,7 +72,7 @@ html {
   box-shadow: none;
   margin: 0;
 }
-.sidebar .collapsible-accordion>li.active {
+.sidebar .collapsible-accordion > li.active {
   background-color: rgba(0,0,0,0.05);
 }
 .sidebar .collapsible-header {
@@ -87,6 +92,14 @@ html {
 .sidebar-collapsible:hover {
   background-color: #fff !important;
 }
+.sidebar .collapsible-body li.active,
+.side-nav.fixed .collapsible-body li.active {
+  background-color: #ee6e73;
+}
+.sidebar .collapsible-body li.active a,
+.side-nav.fixed .collapsible-body li.active a {
+  color: #fff;
+}
 html {
   background-color: #fcfcfc;
 }
@@ -101,6 +114,10 @@ footer {
   padding-left: 240px;
 }
 @media only screen and (max-width: 992px) {
+  main,
+  footer {
+    padding-left: 0;
+  }
   .promo {
     width: 60%;
     margin: 0 auto;
