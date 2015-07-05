@@ -22,7 +22,6 @@ $(function () {
       var tempa=pathList.eq(i);
 
       if(tempa.attr('href')===pathname){
-        console.log(pathname,tempa.attr('href'))
         tempa.parent().addClass('active');
         tempa.parents('.collapsible-body').show().parent().addClass('active');
       }
@@ -92,7 +91,7 @@ $(function () {
   $('select').not('.disabled').material_select();
   $('.slider').slider({full_width: true});
   $('.modal-trigger').leanModal();
-
+  $('.parallax').parallax();
 
 });
 

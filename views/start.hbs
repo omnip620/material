@@ -16,23 +16,23 @@
     <div class="section col s12 m9 l10">
       <div id="download" class="row scrollspy">
         <h2 class="col s12 header">下载</h2>
-        <p class="caption col s12">Materialize用两种方式实现。你可以选择任何一种你比较喜欢的方式引入到你的项目中。</p>
+        <p class="caption col s12">Materialize使用了两种方式来构建。选择任何一种你比较喜欢的方式引入到项目中。</p>
 
         <div class="col s12 m6">
           <p class="promo-caption">Materialize</p>
-          <p>标准版包含压缩后和未压缩两种.这个版本只需要很少的安装需要，如果你不了解Sass的话就用这种吧。</p>
+          <p>此版本（标准版）包含压缩后和未压缩两种.是用这个版本你不用安装任何额外的东西，只需要引入静态文件就行，如果你不了解Sass的话就用这种。</p>
           <a id="download-source" class="btn waves-effect waves-light" href="http://materializecss.com/bin/materialize-v0.96.1.zip">Materialize<i class="mdi-file-file-download right"></i></a>
         </div>
         <div class="col s12 m6">
           <p class="promo-caption">Sass</p>
-          <p>这个版本包含了SCSS源文件，这个版本中你可以自由选择要使用哪些组件。当然，如果选择这个版本你首先需要安装Sass编译器。</p>
+          <p>这个版本包含了SCSS源文件，此版本中你可以自由选择要使用哪些组件。显然，如果选择这个版本你首先需要安装Sass预编译器。</p>
           <a id="download-sass" class="btn waves-effect waves-light" href="http://materializecss.com/bin/materialize-src-v0.96.1.zip">Source<i class="mdi-file-file-download right"></i></a>
         </div>
 
         <div class="col s12">
           <br>
           <p class="promo-caption">NPM</p>
-          <p>你可以通过NPM下载最新的版本.包含了未压缩和压缩后的两种.</p>
+          <p>通过NPM下载最新的标准版。包含了未压缩和压缩后的两种.</p>
           <pre class=" language-bash"><code class=" language-bash">
     npm install materialize<span class="token operator">-</span>css
           </code></pre>
@@ -40,7 +40,7 @@
         <div class="col s12">
           <br>
           <p class="promo-caption">Bower</p>
-          <p>你可以通过Bower下载最新的版本.包含了未压缩和压缩后的两种.</p>
+          <p>通过Bower下载最新的标准版。包含了未压缩和压缩后的两种.</p>
           <pre class=" language-bash"><code class=" language-bash">
     bower install materialize
           </code></pre>
@@ -51,8 +51,8 @@
         <div class="col s12">
           <h2 class="header">安装</h2>
           <h4>项目结构</h4>
-          <p>下载完成后，解压到你的项目中。目录大概是这样的。</p>
-          <p>这有两种不同的版本， <code class=" language-markup">min</code>版本意味着这是压缩后的，能显著减少加载时间. 通常压缩版用在生产环境中，未压缩版用在开发环境中。</p>
+          <p>下载完成后，解压到你的项目中。目录大概是这样。</p>
+          <p>标准版包含压缩和未压缩两种不同的版本， <code class=" language-markup">min</code>版本意味着这是压缩后的，使用这个能显著减少加载时间。 通常压缩版用在生产环境中，未压缩版用在开发环境中。</p>
 
           <pre class=" language-markup"><code class=" directory-markup language-markup">
     MyWebsite/
@@ -71,8 +71,8 @@
         </div>
         <div class="col s12">
           <h4>HTML</h4>
-          <p>下一步，你要确保文件在适当的位置引用。通常javascript文件在页面的底部引用。通过下面这个例子我想你懂得。</p>
-          <p>需要注意的是你必须在引用Materialize前引用Jquery文件!</p>
+          <p>下一步，你要确保静态文件在适当的位置被引用。通常css文件在页面的head标签中引用，javascript文件在页面的底部引用。通过下面这个例子我想你懂得。</p>
+          <p>需要注意的是你必须在引用javascript前引用Jquery文件!</p>
         <pre class=" language-markup"><code class=" language-markup">
   <span class="token doctype">&lt;!DOCTYPE html&gt;</span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
@@ -98,7 +98,7 @@
       <div id="third-party-options" class="row scrollspy">
         <div class="col s12">
           <h2 class="header">第三方选项</h2>
-          <p class="caption">有几个社区提供的选项能让你方便的在你的项目中引入Materialize。不过这些可能没有经过测试，并且可能不会及时更新。</p>
+          <p class="caption">部分社区也提供了些额外的方法在项目中引入Materialize。不过这些可能没有经过测试，从而不能保证一直都是最新版本。</p>
           <p class="promo-caption">Ruby Gem</p>
           <p><a href="https://github.com/mkhairi/materialize-sass">文档</a> 在此。</p>
           <pre><code class=" language-bash">
@@ -122,7 +122,7 @@
       <div id="sass" class="row scrollspy">
         <div class="col s12">
           <h2 class="header">Sass</h2>
-          <p class="caption">如果你下载了Sass版本的，请仔细阅读，否则请忽略。</p>
+          <p class="caption">如果你下载了Sass版本，请仔细阅读以下内容，否则请忽略。</p>
           <h4>编译</h4>
           <p>好吧，你会发现下载文件中全是.scss文件，而不是常规的.css文件，并且还包含了大量的独立组件。不幸的是，浏览器并不能解析Sass，所以你必须先把这些文件编译为常规的.css文件。之后你便可以把这些引入到你的项目了。</p>
 

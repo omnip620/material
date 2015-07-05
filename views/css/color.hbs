@@ -1,6 +1,6 @@
 <div id="index-banner" class="index-banner section no-pad-bot primary-bg">
   <div class="container">
-    <h1 class=" center-on-small-only  text-light ">Color</h1>
+    <h1 class=" center-on-small-only  text-light ">颜色</h1>
     <br>
     <br>
   </div>
@@ -13,18 +13,18 @@
         <h2 class="header">用法</h2>
 
         <p class="caption">
-          这里提供的所有颜色都是基于Material的设计原则，每种颜色均由一个基本色及暗化和亮化组成。
+          本套框架提供的所有颜色完全遵循Material的设计原则，且每种颜色均由一个基本色及暗化和亮化的扩展组成。
         </p>
 
         <div class="row section">
           <h5 class="col s12 m3">背景色</h5>
 
           <div class="col s12 m9">
-            <p>只需要在class属性中写上颜色名字，就可以应用了，想要明或暗则添加上相应的class就行。</p>
+            <p>使用已经定义好的颜色类名，即可应用，想要明或暗则添加上相应的类名即可。</p>
 
             <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
             <pre><code class="language-markup">
-              &lt;div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class&lt;/div>
+  &lt;div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class&lt;/div>
             </code></pre>
           </div>
 
@@ -33,14 +33,14 @@
           <h5 class="col s12 m3">文本颜色</h5>
 
           <div class="col s12 m9">
-            <p>只需在color class名字后面加上<strong>-text</strong>就可以应用了，例如:</p>
+            <p>在定义好的颜色类名加上<strong>-text</strong>后缀即可，例如:</p>
 
             <div class="card-panel"><span
               class="blue-text text-darken-2">This is a card panel with dark blue text</span></div>
             <pre><code class="language-markup">
-              &lt;div class="card-panel">
-              &lt;span class="blue-text text-darken-2">This is a card panel with dark blue text&lt;/span>
-              &lt;/div>
+  &lt;div class="card-panel">
+    &lt;span class="blue-text text-darken-2">This is a card panel with dark blue text&lt;/span>
+  &lt;/div>
             </code></pre>
           </div>
         </div>
@@ -52,21 +52,21 @@
         <h2 class="pink-text text-lighten-2">Sass</h2>
 
         <p>
-          你可以非常简单的对颜色进行扩展，对于背景色，可以这样做。
+          借助Sass可以非常简单的对颜色进行扩展，对于背景色，可以这样做
         </p>
         <pre><code class="language-scss col s12">
-          .ilike-blue-container {
-          @extend .blue, .lighten-4;
-          }
+  .ilike-blue-container {
+    @extend .blue, .lighten-4;
+  }
         </code></pre>
 
         <p>
-          对于文本颜色，可以这样做
+          对于文本色，这样做
         </p>
         <pre><code class="language-scss col s12">
-          .ilike-blue-container {
-          @extend .blue-text, .text-lighten-4;
-          }
+  .ilike-blue-container {
+    @extend .blue-text, .text-lighten-4;
+  }
         </code></pre>
       </div>
       <div id="palette" class="section scrollspy">

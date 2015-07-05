@@ -94,6 +94,10 @@ exports.modals = function (req, res) {
 exports.parallax = function (req, res) {
   return res.render('javascript/parallax');
 };
+exports.parallaxdemo = function (req, res) {
+  return res.render('javascript/parallax-demo',{layout:false});
+};
+
 exports.pushpin = function (req, res) {
   return res.render('javascript/pushpin');
 };

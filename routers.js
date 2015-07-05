@@ -34,6 +34,7 @@ router.get('/dropdown', index.dropdown);
 router.get('/media', index.media);
 router.get('/modals', index.modals);
 router.get('/parallax', index.parallax);
+router.get('/parallax-demo', index.parallaxdemo);
 router.get('/pushpin', index.pushpin);
 router.get('/scrollfire', index.scrollfire);
 router.get('/scrollspy', index.scrollspy);
