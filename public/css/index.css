@@ -40,13 +40,14 @@ html {
   box-shadow: 2px 2px 2px #ddd;
   height: 100%;
   background-color: #fff;
+  z-index: 998;
 }
 .sidebar:hover {
   overflow-y: auto;
 }
 @media screen and (max-width: 992px) {
   .sidebar {
-    display: none;
+    left: -240px;
   }
 }
 .sidebar .logo {
@@ -99,6 +100,10 @@ html {
 .sidebar .collapsible-body li.active a,
 .side-nav.fixed .collapsible-body li.active a {
   color: #fff;
+}
+.sidebar.in {
+  left: 0;
+  transition: left 0.5s ease;
 }
 html {
   background-color: #fcfcfc;
@@ -368,6 +373,27 @@ footer.example {
 @media only screen and (min-width: 993px) {
   .container {
     width: 85%;
+  }
+}
+a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 7.5%;
+  top: 0;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 32px;
+  z-index: 2;
+}
+a.button-collapse.top-nav.full {
+  line-height: 122px;
+}
+@media only screen and (max-width: 600px) {
+  a.button-collapse.top-nav {
+    left: 5%;
   }
 }
 #download-button {

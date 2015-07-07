@@ -4,12 +4,13 @@
   box-shadow 2px 2px 2px #ddd
   height 100%
   background-color #FFFFFF
+  z-index 998
   &:hover
     overflow-y auto
 
 @media screen and (max-width: 992px)
   .sidebar
-    display none
+    left -240px
 
 .sidebar .logo
   width 100%
@@ -61,4 +62,8 @@
 }
 .sidebar .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
   color: #fff;
+}
+.sidebar.in{
+  left 0
+  transition left .5s ease
 }

@@ -4,13 +4,14 @@
   box-shadow: 2px 2px 2px #ddd;
   height: 100%;
   background-color: #fff;
+  z-index: 998;
 }
 .sidebar:hover {
   overflow-y: auto;
 }
 @media screen and (max-width: 992px) {
   .sidebar {
-    display: none;
+    left: -240px;
   }
 }
 .sidebar .logo {
@@ -63,4 +64,8 @@
 .sidebar .collapsible-body li.active a,
 .side-nav.fixed .collapsible-body li.active a {
   color: #fff;
+}
+.sidebar.in {
+  left: 0;
+  transition: left 0.5s ease;
 }

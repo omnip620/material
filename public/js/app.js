@@ -19,11 +19,11 @@ $(function () {
     var pathname = window.location.pathname.substring(1);
     var pathList = $('aside li a');
     for (var i = 0, l = pathList.length; i < l; i++) {
-      var tempa=pathList.eq(i);
+      var tempa = pathList.eq(i);
 
-      if(tempa.attr('href')===pathname){
+      if (tempa.attr('href') === pathname) {
         tempa.parent().addClass('active');
-        tempa.parents('.collapsible-body').show().parent().addClass('active');
+        tempa.parents('.collapsible-body').show().parent().addClass('active').children('a').addClass('active');
       }
       //console.log(pathList.eq(i).attr('href'));
     }
@@ -92,6 +92,17 @@ $(function () {
   $('.slider').slider({full_width: true});
   $('.modal-trigger').leanModal();
   $('.parallax').parallax();
+
+  $('#nav-button').on('click', function () {
+    var $navMobile=$('#nav-mobile');
+    $navMobile.addClass('in')
+    var overlay=$('<div id="sidenav-overlay" style="opacity: 1;" class=""></div>');
+    overlay.on('click',function(){
+      $navMobile.removeClass('in');
+      overlay.remove()
+    });
+    $('body').append(overlay);
+  })
 
 });
 

@@ -276,3 +276,24 @@ footer.example {
     width: 85%;
   }
 }
+a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 7.5%;
+  top: 0;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 32px;
+  z-index: 2;
+}
+a.button-collapse.top-nav.full {
+  line-height: 122px;
+}
+@media only screen and (max-width: 600px) {
+  a.button-collapse.top-nav {
+    left: 5%;
+  }
+}
