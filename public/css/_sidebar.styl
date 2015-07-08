@@ -7,6 +7,9 @@
   z-index 998
   &:hover
     overflow-y auto
+  li
+    &:hover
+      background-color rgba(0, 0, 0, 0.05)
 
 @media screen and (max-width: 992px)
   .sidebar
@@ -20,10 +23,6 @@
   border-bottom 1px solid #ddd
   margin-top 30px
 
-.sidebar
-  li
-    &:hover
-      background-color rgba(0, 0, 0, 0.05)
 
 .sidebar a
   line-height 44px
@@ -67,5 +66,6 @@
 .sidebar.in{
   overflow auto
   left 0
+  box-shadow none
   transition left .5s ease
 }
