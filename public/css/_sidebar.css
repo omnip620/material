@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 992px) {
   .sidebar {
-    left: -240px;
+    left: -245px;
   }
 }
 .sidebar .logo {
@@ -66,6 +66,7 @@
   color: #fff;
 }
 .sidebar.in {
+  overflow: auto;
   left: 0;
   transition: left 0.5s ease;
 }

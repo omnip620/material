@@ -95,13 +95,16 @@ $(function () {
 
   $('#nav-button').on('click', function () {
     var $navMobile=$('#nav-mobile');
-    $navMobile.addClass('in')
+    var $body=$('body');
+    $navMobile.addClass('in');
+    $body.css('overflow','hidden');
     var overlay=$('<div id="sidenav-overlay" style="opacity: 1;" class=""></div>');
     overlay.on('click',function(){
       $navMobile.removeClass('in');
-      overlay.remove()
+      overlay.remove();
+      $body.css('overflow','auto');
     });
-    $('body').append(overlay);
+    $body.append(overlay);
   })
 
 });
