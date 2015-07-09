@@ -398,6 +398,11 @@ a.button-collapse.top-nav.full {
     left: 5%;
   }
 }
+@media only screen and (max-width: 730px) {
+  .mobile-image {
+    max-width: 100%;
+  }
+}
 #download-button {
   width: 260px;
   height: 70px;

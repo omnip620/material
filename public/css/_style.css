@@ -297,3 +297,8 @@ a.button-collapse.top-nav.full {
     left: 5%;
   }
 }
+@media only screen and (max-width: 730px) {
+  .mobile-image {
+    max-width: 100%;
+  }
+}
