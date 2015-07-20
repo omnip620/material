@@ -47,4 +47,6 @@ router.get('/mobile', index.mobile);
 router.get('/showcase', index.showcase);
 router.get('/fullscreen-slider-demo', index.fsd);
 
+router.get('/sitemap.xml', index.sitemap);
+
 module.exports = router;

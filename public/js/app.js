@@ -25,7 +25,6 @@ $(function () {
         tempa.parent().addClass('active');
         tempa.parents('.collapsible-body').show().parent().addClass('active').children('a').addClass('active');
       }
-      //console.log(pathList.eq(i).attr('href'));
     }
   }
 

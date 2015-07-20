@@ -128,3 +128,7 @@ exports.showcase = function (req, res) {
 exports.fsd = function (req, res) {
   return res.render('javascript/fullscreen-slider-demo');
 };
+
+exports.sitemap=function(req,res){
+
+}
